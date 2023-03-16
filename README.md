@@ -1,2 +1,2 @@
 # projeto_arquitetaGS_tcc
- Proejto feito para o TCC do Tecnico de Desenvolvimento de Sistemas
+ Projeto feito para o TCC do Tecnico de Desenvolvimento de Sistemas
