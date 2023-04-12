@@ -1,0 +1,65 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+main {
+  background-image: url("../entrar_tcc/img/background.png");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 180px;
+  width: 380px;
+  height: 520px;
+  padding: 12px 18px;
+}
+.form-top{
+  margin-top: 20px;
+}
+p{
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+div.line{
+  position: relative;
+  bottom: 20px;
+  left: 120px;
+
+  width: 100px;
+  height: 3px;
+  background-color: #CE9184;
+  
+}
+div.form-floating{
+  margin-top: 80px;
+}
+
+/* modificando o input do bootstrap */
+.form-control:focus{
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+
+button.btn-primary{
+  background-color: #CE9184;
+  color: #112137;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 100px;
+  box-shadow: 4px 4px 0px #000000;
+
+  margin-top: 130px;
+}
+button.btn-primary:hover{ /* arrumar o hover */
+  background-color: #CE9184;
+}
