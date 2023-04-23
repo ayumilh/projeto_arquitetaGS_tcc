@@ -60,6 +60,7 @@ button.btn-primary{
 
   margin-top: 130px;
 }
-button.btn-primary:hover{ /* arrumar o hover */
-  background-color: #CE9184;
+button.btn-primary:hover{
+  background-color: #CE9184 !important;
+  border: 2px solid #000000 !important;
 }
