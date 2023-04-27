@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Big John';
+  src: url(../navbar_tcc/fonts/Big_John_PRO/bigjohnpro-regular.otf);
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
-  font-family: "Inter";
+  font-family: "Big John";
 }
 a{
   text-decoration: none;
