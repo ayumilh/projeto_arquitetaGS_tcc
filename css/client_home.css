@@ -4,3 +4,32 @@
   --secondary-color: #112137;
   --third-color: #000000;
 }
+
+body{
+  background-color: var(--bg-primary);  
+}
+
+div.header{
+  color: var(--third-color);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #000000 solid;
+}
+.header h1{
+  font-size: 22pt;
+}
+
+nav{
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-wrap: nowrap;
+
+  width: 126px;
+  height: 100vh;
+  max-height: 100vh;
+}
+.bi{
+  vertical-align: -.125em;
+  fill: currentColor;
+}
