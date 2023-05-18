@@ -1,88 +1,171 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Bem-vind@</title>
+  <title>Title</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="../css/client_home.css">
-
+  <link rel="stylesheet" href="/css/cliente_home.css" />
 </head>
 
 <body>
-  <div class="container">
-    <nav>
-      <div class="d-flex flex-column flex-shrink-0 sidebar">
-  
-        <a href="/" class="d-block align-items-center sidebar-logo">
-          <img src="../img/logotipo.png" alt="logotipo" width="62" height="62">
-        </a>
-  
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto text-center">
-  
-          <li class="sidebar-icons">
-            <a href="#" class="nav-link" aria-current="page">
-              <img src="../img/cliente/nota-fiscal.png" alt="icone-nota-fiscal" class="bi" width="24" height="24">
-            </a>
-          </li>
-  
-          <li class="sidebar-icons">
-            <a href="#" class="nav-link">
-              <img src="../img/cliente/financia.png" alt="icone-nota-fiscal" class="bi" width="24" height="24">
-            </a>
-          </li>
-  
-          <li class="sidebar-icons">
-            <a href="#" class="nav-link">
-              <img src="../img/cliente/cobranca.png" alt="icone-nota-fiscal" class="bi" width="24" height="24">
-            </a>
-          </li>
-         
-        </ul>
-        <hr>
-  
-        <div class="exit">
-          <a href="#" class="d-flex align-items-center ">
-            <img src="../img/cliente/exit.png" alt="exit" width="32" height="32">
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-1">
+        <div class="d-flex flex-column sidebar align-items-center">
+          <a href="/" class="d-block align-items-center sidebar-logo">
+            <img src="../img/logotipo.png" alt="logotipo" width="62" height="62" />
           </a>
-        </div>
-      </div>
-      
-    </nav>
+          <hr/>
 
-    <main>
-      <div>
-        <!-- 
-          button Acompanhe o cronograma da obra
-          button Central de Mensagem  (13)
-          button arquivos
-         -->
+          <ul class="nav nav-pills flex-column mb-auto text-center list-icon">
+            <li class="sidebar-icons">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="../img/cliente/nota-fiscal.png" alt="icone-nota-fiscal" class="bi" width="28" height="28" />
+              </a>
+            </li>
+
+            <li class="sidebar-icons">
+              <a href="#" class="nav-link">
+                <img src="../img/cliente/financia.png" alt="icone-nota-fiscal" class="bi" width="28" height="28" />
+              </a>
+            </li>
+
+            <li class="sidebar-icons">
+              <a href="#" class="nav-link">
+                <img src="../img/cliente/cobranca.png" alt="icone-nota-fiscal" class="bi" width="28" height="28" />
+              </a>
+            </li>
+          </ul>
+          <hr/>
+          <div class="exit">
+            <a href="#" class="d-flex align-items-center ">
+              <img src="../img/cliente/exit.png" alt="exit" width="32" height="32">
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="col-11">
+        <div class="row">
+          <div class="col-12">
+            <header class="align-items-center p-4 mb-3">
+              <a href="/" class="align-items-center text-decoration-none text-black">
+                <img src="/img/cliente/people.png" alt="icone-login" width="24" height="26" class="me-1">
+                <span class="fs-4 fw-bold">Olá, Lara</span>
+              </a>
+              <p>lara@gmail.com</p>
+            </header>
+          </div>
+
+
+          <div class="section justify-content-between align-content-between">
+            <div class="group-btn justify-content-between align-content-between" role="group" aria-label="Basic checkbox toggle button group">
+                        
+              <button type="button" class="btn btn-primary btn-frame">Cronograma da obra</button>
+              <button type="button" class="btn btn-primary btn-frame">Central de mensagem (13)</button>
+              <button type="button" class="btn btn-primary btn-frame">Arquivos</button>
+              
+            </div>
+          </div>
+
+          <div class="list-budgets">
+            <div class="row">
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/emprenteira.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Emprenteira</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/iluminacao.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Iluminacao</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div> <!-- card -->
+              </div> <!-- col -->
+
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/vidracaria.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Vidraçaria</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/marcenaria.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Marcenaria</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div> <!-- card -->
+              </div> <!-- col -->
+
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/ar.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Ar-condicionado</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/marmoraria.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Marmoraria</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div> <!-- card -->
+              </div> <!-- col -->
+
+              <div class="col-4">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                  <div class="card-header"><img src="/img/cliente/revestimento.png" alt="" width="34" height="34"></div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title text-light">Revestimento</h5>
+                    <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- main -->
+
+        </div> <!-- row -->
       </div>
-  
-      <div>
-        <!-- Orçamentos 
-            7 modal
-        -->
-      </div>
-    </main>
-  
+    </div>
   </div>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
