@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <title>
@@ -11,22 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg" id="nav-princip">
-            <div class="container-fluid">
+            <div class="container-fluid" id="cont-nav">
                 <a class="navbar-brand" href="#" id="link-logo">
-                    <img src="../site_app/imgs/logotipo.png" alt="" id="img-logo">
+                    <img src="../imgs/logotipo.png" alt="" id="img-logo">
                 </a>
                 <!-- Menun hamburguer -->
-                <button class="navbar-toggler navbar-dark bg-dark meu-hamburg" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-dark bg-dark meu-hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon span-ham"></span>
                 </button>
                 <!-- Fim do hamburguer -->
@@ -35,19 +32,29 @@
                         <menu type="context">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Portfólio</a>
+                                    <a class="nav-link nav-active" id="nav-ativa" aria-current="page" href="#">
+                                         Portfólio
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Sobre</a>
+                                    <a class="nav-link" href="#">
+                                         Sobre 
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Serviços</a>
+                                    <a class="nav-link font-nav" href="#">
+                                         Serviços 
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Orçamento</a>
+                                    <a class="nav-link font-nav" href="#">
+                                         Orçamento</p>
+                                    </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Entrar</a>
+                                <li class="nav-item" id="btn-entrar">
+                                    <a class="nav-link foont-nav" href="#">
+                                         Entrar
+                                    </a>
                                 </li>
                             </ul>
                         </menu>
@@ -57,91 +64,160 @@
         </nav>
     </header>
     <main>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="../site_app/imgs/area_social.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="../site_app/imgs/area_social.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="../site_app/imgs/area_social.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
 
-        </div>
+        <section id="sec-carroussel" class="col-md">
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="../imgs/area_social.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../imgs/area_social.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../imgs/area_social.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
         </section>
-<br>
+
+
+        <article id="divisoria" class="d-flex justify-content-center">
+            <div>
+                <h1 id="tit-port">Portfólio</h1>
+            </div>
+        </article>
+
+        <br><br>
         <!-- CARDS -->
-        <center>
-        <section>
-            
-            <div class="row"> <!-- COLOCAR TODOS OS CARDS NA CLASS ROW -->
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="../site_app/imgs/area_social.png" class="car-img-top my-3">
-                        <div class="card-body">
-                            <h2 class="text-warning">AP 204</h2>
-                            <h4 class="py-2">SP 2022</h>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="../site_app/imgs/area_social.png" class="car-img-top my-3">
-                        <div class="card-body">
-                            <h2 class="text-warning">AP 204</h2>
-                            <h4 class="py-2">SP 2022</h>
-                        </div>
-                    </div>
-                </div>
-            </div>    
 
+        <section id="cards">
+            <div class="container" id="conjunto-cards">
+                <div id="um-cl-cards" class="row">
+                    <!-- COLOCAR TODOS OS CARDS NA CLASS ROW -->
+                    <!-- Casa 159 -->
+                    <div class="card fundo-img" style="width: 398px; height: 420px;">
+                        <img src="../imgs/casa-159.png" class="card-img imgs-cards" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title texto-card"><b>Casa 159</b></h5>
+                            <p class="card-text texto-card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- Exclusive Miguel Yunes -->
+                    <div class="card fundo-img" style="width: 398px; height: 420px;">
+                        <img src="../imgs/exclusive-miguel-yunes.png" class="card-img imgs-cards" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title texto-card"><b>Excluive Miguel Yunes</b></h5>
+                            <p class="card-text texto-card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda coluna de cards -->
+
+
+                <div id="dois-cl-cards" class="row">
+                    <!-- Raiz parque resort -->
+                    <div class="card fundo-img" style="width: 398px; height: 420px;">
+                        <img src="../imgs/raiz-parque-resort-ap52.png" class="card-img imgs-cards" alt="...">
+                        <div class="card-body fundo-img">
+                            <h5 class="card-title texto-card"><b>AP 52</b></h5>
+                            <p class="card-text texto-card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- Raizes Eco CLuber Cotia -->
+                    <div class="card fundo-img" style="width: 398px; height: 420px;">
+                        <img src="../imgs/raizes-eco-clube-cotia.png" class="card-img imgs-cards" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title texto-card"><b>Raizer Eco Clube Cotia</b></h5>
+                            <p class="card-text texto-card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Terceira coluna de cards -->
+
+                <div id="dois-cl-cards" class="row">
+                    <!-- Residencial São Bento -->
+                    <div class="card fundo-img" style="width: 398px; height: 420px;">
+                        <img src="../imgs/residencial-sao-bento.png" class="card-img imgs-cards" alt="...">
+                        <div class="card-body fundo-img">
+                            <h5 class="card-title texto-card"><b>AP 52</b></h5>
+                            <p class="card-text texto-card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- Raizes Eco CLuber Cotia -->
+                    <div class="card fundo-img" style="width: 398px; height: 420px;">
+                        <img src="../imgs/residencial-ypiranga-ap93.png" class="card-img imgs-cards" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title texto-card"><b>Raizes Eco Clube Cotia</b></h5>
+                            <p class="card-text texto-card">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
-    </center>
+
     </main>
+    <br>
     <footer>
-        <!-- place footer here -->
+        <div class="footer-box">
+            <div class="footer-line"></div>
+
+            <!-- redes sociais -->
+            <div class="d-flex justify-content-center">
+                <img src="../footer_home/img/facebook-logo.svg" alt="Facebook">
+                <img src="../footer_home/img/instagram-logo.svg" alt="Instagram">
+                <img src="../footer_home/img/pinterest-logo.svg" alt="Pinterest">
+            </div>
+
+            <div class="footer-line"></div>
+        </div>
+
+        <div class="footer-sobre">
+            <p>Arquiteta Gabriella Sousa</p>
+            <p> ₢ 2023 - GS Arquiteta</p>
+            <p>gabriella@gmail.com | 11 4002-8922</p>
+        </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
