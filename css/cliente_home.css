@@ -3,6 +3,7 @@
     --cinza: #8F9BB7;
     --secondary-color: #112137;
     --third-color: #000000;
+    --bg-itens: #CB8B7D;
 }
 
 body{
@@ -77,3 +78,24 @@ header{
     box-shadow: 6px 7px 9px rgba(0, 0, 0, 0.25);
 }
 
+/* modal: cotrole financeiro */
+.modal-header{
+    background-color: var(--secondary-color);
+}
+
+.info{
+    background-color: var(--bg-itens);
+    border-radius: 20px;
+    filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.25));
+    margin-top: 10px;
+    font-weight: 600;
+}
+.receita{
+    color: #008605;
+}
+.despesa{
+    color: #AB0000;
+}
+.btn-enviar{
+    background-color: #008605;
+}
