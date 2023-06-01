@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="../php/criar_projeto.php" method="post">
+    <table>
+      <tr>
+        <td>
+          <label for="">Nome do cliente</label>
+        </td>
+        <td>
+          <input type="text" name="nome_user" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="">Data do projeto</label>
+        </td>
+        <td>
+          <input type="date" name="data_projeto" pattern="\d{4}\d{2}\d{2}">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="">Id do cliente</label>
+        </td>
+        <td>
+          <input type="number" name="id_cliente" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><button name="criar_projeto">Criar</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
