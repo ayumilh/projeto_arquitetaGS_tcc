@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Entrar</title>
+  <title>pin</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,27 +18,28 @@
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/entrar.css">
 
+
 </head>
 
 <body class="text-center">
   <header>
     <nav class="navbar">
 
-      <a href="../index.html" class="a-logo">
-        <img src="../img/logotipo.png" alt="logotipo" class="logo">
+      <a href="#" class="a-logo">
+        <img src="../img/logotipo.png" alt="" class="logo">
       </a>
   
       <div class="menu">
         <ul class="nav-list">
 
-          <input type="checkbox" id="checkbox_toggle" />
+          <input type="checkbox" id="checkbox_toggle"/>
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-          <li><a href="../html/portfolio.html">Portfólio</a></li>
+          <li><a href="#">Portfólio</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Contato</a></li>
-          <li><a href="../html/entrar.html">Entrar</a></li>
+          <li><a href="entrar.html">Entrar</a></li>
         </ul>
       </div>
 
@@ -47,7 +48,7 @@
 
 
   <main>
-    <form action="../php/mailer.php" method="post">
+    <form action="../php/pin.php" method="post">
       
       <div class="form-top">
         <img src="../img/logotipo.png" alt="logotipo" width="72" height="72">
@@ -56,24 +57,28 @@
         <div class="line"></div>
       </div>
 
-      <div class="input-group">
-        <span class='bx bx-envelope input-group-text'></span>
-        <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email_user">
-        <div class="inp-line"></div>
-      </div>
-      <div class="input-group">
-        <span class='bx bx-envelope input-group-text'></span>
-        <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="nome_user">
-        <div class="inp-line"></div>
+      <h4 class="pin-title">Insira o pin do projeto</h4>
+
+      <div class="group-pin">
+        <input type="text" class="inp-pin" maxlength="1" case name="pin-0">
+        <input type="text" class="inp-pin" maxlength="1" case name="pin-1">
+        <input type="text" class="inp-pin" maxlength="1" case name="pin-2">
+        <input type="text" class="inp-pin" maxlength="1" case name="pin-3">
+        <input type="text" class="inp-pin" maxlength="1" case name="pin-4">
       </div>
 
-      <div class="form-footer">
-        <button class="btn btn-primary btn-lg w-50" type="submit" name="send">Entrar</button>
+      <a href="#" class="pin-reenviar">Não recebi</a>
+
+      <div class="form-footer-pin">
+        <button class="btn btn-primary btn-lg w-50 btn-pin" type="submit" name="verificar">Entrar</button>
       </div>
 
     </form>
 
   </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
 
 
   <!-- Bootstrap JavaScript Libraries -->
