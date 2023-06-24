@@ -36,16 +36,20 @@
                 <img src="../img/cliente/financia.png" alt="icone-financia" class="bi" width="28" height="28" />
               </a>
             </li>
-
             <li class="sidebar-icons">
               <a href="#" class="nav-link">
-                <img src="../img/cliente/cobranca.png" alt="icone-cobranca" class="bi" width="28" height="28" />
+                <img src="../img/cliente/cronograma.png" alt="icone-cronograma" class="bi" width="28" height="28" />
+              </a>
+            </li>
+            <li class="sidebar-icons">
+              <a href="#" class="nav-link">
+                <img src="../img/cliente/file.png" alt="icone-file" class="bi" width="28" height="28" />
               </a>
             </li>
           </ul>
           <hr/>
           <div class="exit">
-            <a href="#" class="d-flex align-items-center ">
+            <a href="#" class="d-flex align-items-center">
               <img src="../img/cliente/exit.png" alt="exit" width="32" height="32">
             </a>
           </div>
@@ -65,7 +69,7 @@
           </div>
 
 
-          <div class="section justify-content-between align-content-between">
+          <!-- <div class="section justify-content-between align-content-between">
             <div class="group-btn justify-content-between align-content-between" role="group" aria-label="Basic checkbox toggle button group">
                         
               <button type="button" class="btn btn-primary btn-frame">Cronograma da obra</button>
@@ -73,13 +77,13 @@
               <button type="button" class="btn btn-primary btn-frame">Arquivos</button>
               
             </div>
-          </div>
+          </div> -->
 
           <!-- orçamentos -->
           <div class="list-budgets">
             <div class="row">
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/empreiteira.html';">
                   <div class="card-header"><img src="/img/cliente/emprenteira.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
                     <h5 class="card-title text-light">Emprenteira</h5>
@@ -89,17 +93,17 @@
               </div>
               
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/iluminacao.html';">
                   <div class="card-header"><img src="/img/cliente/iluminacao.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
-                    <h5 class="card-title text-light">Iluminacao</h5>
+                    <h5 class="card-title text-light">Iluminação</h5>
                     <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
                   </div>
                 </div> <!-- card -->
               </div> <!-- col -->
 
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/vidracaria.html';">
                   <div class="card-header"><img src="/img/cliente/vidracaria.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
                     <h5 class="card-title text-light">Vidraçaria</h5>
@@ -109,7 +113,7 @@
               </div>
               
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/marcenaria.html';">
                   <div class="card-header"><img src="/img/cliente/marcenaria.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
                     <h5 class="card-title text-light">Marcenaria</h5>
@@ -119,7 +123,7 @@
               </div> <!-- col -->
 
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/ar_cond.html';">
                   <div class="card-header"><img src="/img/cliente/ar.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
                     <h5 class="card-title text-light">Ar-condicionado</h5>
@@ -129,7 +133,7 @@
               </div>
               
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/marmoraria.html';">
                   <div class="card-header"><img src="/img/cliente/marmoraria.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
                     <h5 class="card-title text-light">Marmoraria</h5>
@@ -139,7 +143,7 @@
               </div> <!-- col -->
 
               <div class="col-xl-4 col-sm-6">
-                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;">
+                <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/revestimento.html';">
                   <div class="card-header"><img src="/img/cliente/revestimento.png" alt="" width="34" height="34"></div>
                   <div class="card-body text-primary">
                     <h5 class="card-title text-light">Revestimento</h5>
@@ -243,7 +247,7 @@
                             <span class="input-group-text bg-light">R$</span>
                             <div class="form-floating">
                               <input type="text" class="form-control" placeholder="00.00">
-                              <label for="floatingInputGroup1">Username</label>
+                              <label for="floatingInputGroup1">Valor</label>
                             </div>
                           </div>
                         </div>
