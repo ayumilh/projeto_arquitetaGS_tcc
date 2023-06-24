@@ -33,8 +33,9 @@ div.title{
   width: 40px;
   height: 40px;
 }
+
 main{
-  /* margin: auto; */
+  margin: auto;
 }
 .btn-secondary{
   background-color: var(--bg-primary) !important;
@@ -81,7 +82,7 @@ main{
 
   box-sizing: border-box;
   width: 490px;
-  height: 500px;
+  height: 470px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
