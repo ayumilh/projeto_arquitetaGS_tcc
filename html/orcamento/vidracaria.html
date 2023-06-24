@@ -7,22 +7,93 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="/css/orcamento.css">
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
+  <div class="container container-sm">
+    <header class="mb-lg-5 text-center">
+      <nav class="navbar">
+        <img src="/img/voltar.png" class="btn-voltar">
+        <div class="title">
+          <h1>Orçamentos</h1>
+        </div>
+      </nav>
+    </header>
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+
+            <div class="list-group w-auto h-auto">
+              <h3>Vidraçaria</h3>
+
+              <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                <img src="/img/cliente/orcamento.png" alt="twbs" width="36" height="36" class="flex-shrink-0 mt-2 img-orcamento">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Empresa 1
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">link</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-selecao indeterminado">Selecionar</button>
+                </div>
+              </div>
+    
+              <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                <img src="/img/cliente/orcamento.png" alt="twbs" width="36" height="36" class="flex-shrink-0 mt-2 img-orcamento">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Empresa 2
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">link</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-selecao selecionado">Selecionado</button>
+                </div>
+              </div>
+
+              <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                <img src="/img/cliente/orcamento.png" alt="twbs" width="36" height="36" class="flex-shrink-0 mt-2 img-orcamento">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Empresa 3
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">link</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-selecao desabilitado">Selecionar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bloco de notas -->
+          <div class="col-xl-6 mt-5">
+            <div class="mb-3">
+              <textarea class="form-control bloco-notas" id="exampleFormControlTextarea1" placeholder="Notas..."></textarea>
+            </div>
+          </div>
+
+        </div>  <!-- row -->
+      </div> <!-- container -->
+    </main>
+  </div>
+
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
