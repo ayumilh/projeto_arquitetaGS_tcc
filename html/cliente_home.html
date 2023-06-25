@@ -11,13 +11,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="../css/cliente_home.css" />
+  <link rel="stylesheet" href="../css/cliente_home.css"/>
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-1">
+      <nav class="col-1 fixed-top">
         <div class="d-flex flex-column sidebar align-items-center">
           <a href="/" class="d-block align-items-center sidebar-logo">
             <img src="../img/home/logotipo.png" alt="logotipo" width="62" height="62" />
@@ -57,7 +57,7 @@
       </nav>
 
       <div class="col-11">
-        <div class="row">
+        <div class="row main">
           <div class="col-12">
             <header class="align-items-center p-4 mb-3">
               <a href="/" class="align-items-center text-decoration-none text-black">
@@ -66,7 +66,6 @@
               </a>
             </header>
           </div>
-
 
           <!-- <div class="section justify-content-between align-content-between">
             <div class="group-btn justify-content-between align-content-between" role="group" aria-label="Basic checkbox toggle button group">
@@ -81,6 +80,7 @@
           <!-- orçamentos -->
           <div class="list-budgets">
             <div class="row">
+
               <div class="col-xl-4 col-sm-6">
                 <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/empreiteira.html';">
                   <div class="card-header"><img src="/img/client/emprenteira.png" alt="" width="34" height="34"></div>
@@ -89,7 +89,7 @@
                     <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
                   </div>
                 </div>
-              </div>
+              </div> <!-- col -->
               
               <div class="col-xl-4 col-sm-6">
                 <div class="card border-primary m-2 card-frame" style="max-width: 20rem;"  onclick="window.location='../html/iluminacao.html';">
@@ -150,62 +150,61 @@
                   </div>
                 </div>
               </div>
-
+            
               <!-- modal: nota fiscal--> 
-            <div class="modal fade modal-lg" id="modalNotaFiscal" tabindex="-1"  aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nota fiscal</h1>
-                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body m-3">
-                    <!-- img, serviço, obs, data de publucaçõa -->
-                    <div class="list-group w-auto h-auto">
-                    <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                      <img src="/img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                      <div class="d-flex gap-2 w-100 justify-content-between">
-                        <div>
-                          <h6 class="mb-0">Marcenaria</h6>
-                          <p class="mb-0 opacity-75 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                          <p><a href="#" class="fs-6">Clique para visualizar</a></p>
-                        </div>
-                        <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
-                      </div>
+              <div class="modal fade modal-lg" id="modalNotaFiscal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nota fiscal</h1>
+                      <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div class="modal-body m-3">
+                      <!-- img, serviço, obs, data de publucaçõa -->
+                      <div class="list-group w-auto h-auto">
+                      <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                        <img src="/img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                          <div>
+                            <h6 class="mb-0">Marcenaria</h6>
+                            <p class="mb-0 opacity-75 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p><a href="#" class="fs-6">Clique para visualizar</a></p>
+                          </div>
+                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
+                        </div>
+                      </div>
 
-                    <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                      <img src="/img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                      <div class="d-flex gap-2 w-100 justify-content-between">
-                        <div>
-                          <h6 class="mb-0">iluminacao</h6>
-                          <p class="mb-0 opacity-75 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                          <p><a href="#" class="fs-6">Clique para visualizar</a></p>
+                      <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                        <img src="/img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                          <div>
+                            <h6 class="mb-0">iluminacao</h6>
+                            <p class="mb-0 opacity-75 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p><a href="#" class="fs-6">Clique para visualizar</a></p>
+                          </div>
+                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
                         </div>
-                        <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
                       </div>
-                    </div>
 
-                    <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                      <img src="/img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                      <div class="d-flex gap-2 w-100 justify-content-between">
-                        <div>
-                          <h6 class="mb-0">Vidro</h6>
-                          <p class="mb-0 opacity-75 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
-                          <p><a href="#" class="fs-6">Clique para visualizar</a></p>
+                      <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                        <img src="/img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
+                        <div class="d-flex gap-2 w-100 justify-content-between">
+                          <div>
+                            <h6 class="mb-0">Vidro</h6>
+                            <p class="mb-0 opacity-75 fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                            <p><a href="#" class="fs-6">Clique para visualizar</a></p>
+                          </div>
+                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
                         </div>
-                        <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
+                      </div>
                       </div>
                     </div>
+                    <div class="modal-footer">
+                      
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    
                   </div>
                 </div>
               </div>
-            </div>
-
 
               <!-- Modal -->
               <div class="modal fade modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -278,10 +277,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div> <!-- main -->
 
-        </div> <!-- row -->
+            </div>
+          </div> <!-- orcamentos -->
+
+        </div> <!-- main - row -->
       </div>
     </div>
   </div>
