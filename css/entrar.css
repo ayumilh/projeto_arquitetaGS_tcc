@@ -118,3 +118,12 @@ input.inp-pin{
   font-size: 14pt;
   text-shadow: 1px 8px 12px rgba(17, 33, 55, 0.8);
 }
+@media (max-width: 575.98px){
+  form{
+    width: 300px;
+    height: 500px;
+  }
+  div.line{
+    width: 220px;
+  }
+}
