@@ -6,7 +6,148 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Big John';
 }
+body {
+  overflow-x: hidden;
+}
+
+/* Hamburguer */
+#but-ham span {
+  color: #112137;
+  background-color: black;
+}
+.meu-hamburg {
+  background-color: #112137 !important;
+}
+.span-ham {
+  color: #CE9184 !important;
+}
+
+/*  navbar */
+.my-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #112137;
+}
+
+@media (max-width: 1024px) {
+  .my-navbar {
+      margin-left: -180px;
+  }
+  /* #btn-entrar {
+      margin-left: -50px;
+  } */
+}
+.abas a {
+  display: flex;
+  gap: 1em;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: -13px;
+}
+
+.abas a:hover {
+  color: #fff;
+  transition: 0.3 ease;
+  text-decoration: underline #CE9184;
+}
+
+.abas .nav-active {
+  color: whitesmoke !important;
+  text-decoration: underline whitesmoke;
+}
+.abas .nav-link {
+  color: #CE9184;
+}
+#link-logo {
+  padding: -40px;
+}
+#btn-entrar {
+  padding-left: 100px;
+}
+#btn-entrar a:hover {
+  color: #112137;
+  background-color: #fff;
+}
+.my-collapse {
+  padding-left: 300px;
+}
+li {
+  padding: 13px;
+  font-size: 10px;
+  text-decoration: dotted;
+}
+
+li a {
+  font-size: 10px;
+  text-decoration: dotted;
+}
+
+#cont-nav {
+  margin-left: 40px;
+}
+
+.font-nav {
+  font-size: 23px;
+}
+/* Carroussel */
+
+@media (max-width: 768px) {
+  #sec-carroussel {
+      display: none;
+  }
+}
+/* Cards */
+
+#um-cl-cards {
+  justify-content: center;
+}
+
+#dois-cl-cards {
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.fundo-img {
+  background-color: #CE9184;
+  padding-top: 2rem;
+  border-radius: inherit;
+}
+
+.texto-card {
+  color: white;
+}
+
+.imgs-cards {
+  border-radius: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 body{
   font-family: "Big John";
 }
@@ -16,7 +157,8 @@ a{
 li{
   list-style: none;
 }
-/* NAVBAR */
+
+
 .a-logo{
   margin-left: 70px;
 }
@@ -39,7 +181,8 @@ li{
   width: 62px;
 }
 
-/* MENU */
+
+
 .menu{
   display: flex;
   gap: 1em;
@@ -55,18 +198,21 @@ li{
   padding: 5px 34px;
 }
 
-/* MENU RESPONSIVO */
-/* CHECKBOX */
+
+
 input[type=checkbox]{
   display: none;
 }
-/* hamburger menu */
+
+
 .hamburger{ 
   display: none;
   font-size: 24px;
   user-select: none;
 }
-/* APLICAÇÃO MEDIA QUERIES */
+
+
+
 @media (max-width: 768px) {
   .menu{
     display: none;
@@ -92,4 +238,4 @@ input[type=checkbox]{
     display: inline-block;
   }
   
-}
+} */
