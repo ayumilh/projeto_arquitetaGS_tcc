@@ -9,116 +9,17 @@
 body {
     overflow-x: hidden;
 }
-/* Logo */
-/* Hamburguer */
 
-#but-ham span {
-    color: #112137;
-    background-color: black;
-}
 
-.meu-hamburg {
-    background-color: #112137 !important;
-}
-
-.span-ham {
-    color: #CE9184 !important;
-}
-/* NAV */
-
-#nav-princip {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #112137;
-}
-
-@media (max-width: 1024px) {
-    #navbarNav {
-        margin-left: -180px;
-    }
-    #btn-entrar {
-        margin-left: -50px;
-    }
-}
-
-/*  @media (max-width: 1440px) {
-    #navbarNav {
-        margin-left: 60px;
-    }
-    #btn-entrar {
-        margin-left: 110px;
-    }
-} */
-
-#abas a {
-    display: flex;
-    gap: 1em;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: -13px;
-}
-
-#abas a:hover {
-    color: #fff;
-    transition: 0.3 ease;
-    text-decoration: underline #CE9184;
-}
-
-#abas .nav-active {
-    color: whitesmoke !important;
-    text-decoration: underline whitesmoke;
-}
-
-#abas .nav-link {
-    color: #CE9184;
-}
-
-#link-logo {
-    padding: -40px;
-}
-
-#btn-entrar {
-    padding-left: 100px;
-}
-
-#btn-entrar a:hover {
-    color: #112137;
-    background-color: #fff;
-}
-
-#navbarNav {
-    padding-left: 300px;
-}
-
-li {
-    padding: 13px;
-    font-size: 10px;
-    text-decoration: dotted;
-}
-
-li a {
-    font-size: 10px;
-    text-decoration: dotted;
-}
-
-#cont-nav {
-    margin-left: 40px;
-}
-
-.font-nav {
-    font-size: 23px;
-}
 /* Carroussel */
-
 @media (max-width: 768px) {
     #sec-carroussel {
         display: none;
     }
 }
-/* Cards */
 
+
+/* Cards */
 #um-cl-cards {
     justify-content: center;
 }
@@ -152,8 +53,9 @@ li a {
     position: absolute;
     margin-top: -5px;
 }
-/* Footer */
 
+
+/* Footer */
 footer,
 div.footer-box {
     background-color: #112137;
