@@ -44,12 +44,6 @@ header,
   padding: 10px 10px 10px 200px;
 }
 
-@media (max-width: 1024px) {
-  .my-navbar {
-      margin-left: -180px;
-  }
-}
-
 .abas a {
   display: flex;
   gap: 1em;
@@ -62,24 +56,10 @@ header,
   transition: 0.3 ease;
   text-decoration: underline var(--bg-itens);
 }
-.abas .nav-active {
-  color: whitesmoke !important;
-  text-decoration: underline whitesmoke;
-}
+
 li .nav-link {
   color: var(--bg-itens) !important;
   padding-left: 25px !important;
-}
-#link-logo {
-  padding: -40px;
-}
-
-#btn-entrar {
-  padding-left: 100px;
-}
-#btn-entrar a:hover {
-  color: var(--secondary-color);
-  background-color: #fff;
 }
 
 .my-collapse {
@@ -87,21 +67,28 @@ li .nav-link {
 }
 li {
   padding: 13px;
-  font-size: 10px;
-  text-decoration: dotted;
-}
-li a {
-  font-size: 10px;
-  text-decoration: dotted;
 }
 
-#cont-nav {
-  margin-left: 40px;
+
+/* media queries */
+@media (max-width: 575.98px){
+  .my-navbar{
+    padding: 10px 10px 10px 40px;
+  }
+  .navbar-brand img{
+    width: 58px;
+    height: 58px;
+  }
+  .my-collapse {
+    padding-left: 20px;
+  }
+  .abas a {
+    font-size: 18px;
+  }
+  
 }
 
-.font-nav {
-  font-size: 23px;
-}
+
 
 
 
