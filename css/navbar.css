@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Big John';
-  src: url(font/fonts/Big_John_PRO/bigjohnpro-regular.otf);
+  src: url(../font/Big_John_PRO/bigjohnpro-regular.otf)
 }
 :root{
   --bg-primary: #FFFFFF;
@@ -21,7 +21,7 @@ body {
 
 header, 
 .my-navbar,
-.meu-hamburg{
+.my-hamburg{
   background-color: var(--secondary-color) !important;
 }
 
