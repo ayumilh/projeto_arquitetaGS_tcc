@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'Big John';
+    src: url(../font/Big_John_PRO/bigjohnpro-regular.otf)
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "BIG John Pro light";
+    font-family: "BIG John";
 }
-
-body {
-    overflow-x: hidden;
-}
-
 
 /* Carroussel */
 @media (max-width: 768px) {
