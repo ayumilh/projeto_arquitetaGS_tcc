@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Big John';
+  src: url('/fonts/Big_John_PRO/bigjohnpro-regular.otf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Big John';
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+/* NAVBAR */
+.a-logo{
+  margin-left: 70px;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #112137;
+
+}
+.nav-list{
+  display: flex;
+}
+.nav-list a{
+  color: #CE9184;
+}
+.logo{
+  height: 62px;
+  width: 62px;
+}
+
+/* MENU */
+.menu{
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  font-weight: 600;
+}
+.menu li a:hover{
+  color: #fff;
+  transition: 0.3 ease;
+  text-decoration: underline #CE9184;
+}
+.menu li{
+  padding: 5px 34px;
+}
+
+/* card e foto*/
+.sobre{
+  color: #CE9184;
+  text-align: center;
+  margin-top: 50px;
+}
+.meucard{
+  position: absolute;
+  margin: 180px;
+  left: 6%;
+  width: 500px;
+  height: 180px;
+  border-radius: 0px;
+}
+.card-body{ 
+  color: #CE9184;
+  text-align: center;
+  font-size: 500px;
+}
+.card-title{
+  font-size: 60px;
+}
+.foto{
+  position: absolute;
+}
+.img-fotosobre{
+  position: absolute;
+  left: 42%;
+  margin-top: 125px;
+}
+.img-group{
+  position: absolute;
+  right: 250px;
+  margin-top: 80px;
+  
+}
+
+/* MENU RESPONSIVO */
+/* CHECKBOX */
+input[type=checkbox]{
+  display: none;
+}
+/* hamburger menu */
+.hamburger{ 
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 778px) {
+  .menu{
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover{
+    display: inline-block;
+    background-color: #fff;
+    transition: 0.3s ease;
+  }
+  .menu li + li{
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+
+  /* redimencionamento das imagens e o card*/
+  /* problema na transição entre os tamanhos*/
+  .img-fotosobre{
+    font-size: 50px;
+    left: 1%;
+    margin-top: 42%;
+
+  }
+  .img-ponto{
+    font-size: 100px;
+    left: 50%;
+    margin-top: 30%;
+  }
+
+  .meucard{
+    left: -40%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .sobre{
+    font-size: 50px;
+  }
+}
