@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Big John Pro";
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: "BIG John Pro";
     background-color: #EBEFEE;
+}
+main{
+    font-family: "BIG John Pro";
 }
 /* Logo */
 
 #img-logo {
     margin-left: 75px;
 }
+
 /* Hamburguer */
 
 #but-ham span {
-    color: #112137;
+    color: #112137 !important;
     background-color: black;
 }
 
@@ -30,6 +31,7 @@ body {
 .span-ham {
     color: #CE9184 !important;
 }
+
 /* NAV */
 
 #nav-princip {
@@ -38,77 +40,63 @@ body {
     justify-content: space-between;
     padding: 13px;
     background-color: #112137;
-
-    
-
 }
 
-#navbarNav{
-
-margin-left: 100px;
-
-
+#navbarNav {
+    margin-left: 100px;
 }
 
-#contato{
-
+#contato {
     margin-left: 400px;
     margin-inline-start: 200px;
-
 }
-#form2{
 
+#form2 {
     margin-top: 20%;
     margin-left: 5%;
     background-position: 2cm 4cm;
     background-position: left;
 }
-#mensagem{
+
+#mensagem {
     position: relative;
     width: 30px;
-    
 }
 
-#formulario{
-
-position: relative ;
-margin-left: 60%;
-width: 30%;
-margin-top: -30%;
-border-radius: 40px;
-font-size: 16px;
-
-background-color: #EBEFEE;
+#formulario {
+    position: relative;
+    margin-left: 60%;
+    width: 30%;
+    margin-top: -30%;
+    border-radius: 40px;
+    font-size: 16px;
+    background-color: #EBEFEE;
 }
 
 
-
-
-
-
-#orcamento1{
-    color:#CE9184;
+#orcamento1 {
+    color: #CE9184;
     font-size: 26px;
 }
 
-#msg{
+#msg {
     width: 100%;
 }
 
 
-#Obra{
+#Obra {
 
     text-align: center;
     font-size: 15px;
 }
 
-#metro{
+#metro {
 
     margin-left: 300px;
 
 }
 
-#maps{
+#maps {
     width: 50%;
 }
 
@@ -130,6 +118,7 @@ background-color: #EBEFEE;
 #abas .nav-link {
     color: #CE9184;
 }
+
 /* #pag-ativ p {
 color: #fff;
 text-decoration: underline #CE9184;
@@ -138,6 +127,7 @@ text-decoration: underline #CE9184;
 #link-logo {
     margin-right: 310px;
 }
+
 /*  
 h1 {
     background-color: aquamarine;
@@ -146,23 +136,26 @@ h1 {
 */
 
 
-    @media screen and (min-width: 450px) {
-        #formulario{
-          position:relative;
-          width: 40%;
-        }
-        #orcamento1{
-          width: 10%;
-        }
-        #maps{
-          width: 50%;
-        }
-    
-        .container {
-          padding: 10px;
-        }
-        #msg{
-            text-align: center;
-            width: -30%;
-            }
-      }
+@media screen and (min-width: 450px) {
+    #formulario {
+        position: relative;
+        width: 40%;
+    }
+
+    #orcamento1 {
+        width: 10%;
+    }
+
+    #maps {
+        width: 50%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    #msg {
+        text-align: center;
+        width: -30%;
+    }
+}

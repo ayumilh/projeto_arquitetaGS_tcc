@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Big John';
+    src: url(../font/Big_John_PRO/bigjohnpro-regular.otf)
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+footer,
+div.footer-box {
+    background-color: #112137;
+    font-family: 'Big John';
+}
+
+div.footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    width: 100%x;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    padding: 15px 8px;
+}
+
+div.footer-line {
+    width: 580px;
+    height: 1px;
+    background-color: #FAD6C6;
+}
+
+#imgs-redes.img-rede {
+    padding: 0px 6px;
+    margin-bottom: 10px;
+}
+
+div.footer-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.footer-sobre p {
+    color: #FAD6C6;
+    font-size: 16pt;
+    margin-bottom: 8px;
+}

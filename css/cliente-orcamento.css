@@ -10,8 +10,8 @@
   --bg-itens: #CB8B7D;
 }
 @font-face {
-  font-family: 'Itim', cursive;
-  src: url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+  font-family: 'Big John';
+  src: url(../font/Big_John_PRO/bigjohnpro-regular.otf)
 }
 
 body{
@@ -74,7 +74,7 @@ main{
 
 /* bloco de notas */
 .bloco-notas{
-  font-family: 'Itim', cursive;
+  font-family: 'Big John', cursive;
   color: rgba(0, 0, 0, 0.70);
   font-size: 24px;
   line-height: 22px;
