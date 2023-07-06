@@ -136,6 +136,7 @@ input.inp-pin{
 @media (max-width: 430px) {
   form{
     width: 350px;
+    margin-bottom: 140px;
   }
 }
 
