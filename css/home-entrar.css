@@ -4,11 +4,15 @@
   --secondary-color: #112137;
   --third-color: #000000;
   --bg-itens: #CB8B7D;
+  --select-itens: rgba(203, 139, 125, 0.7);
 }
 *{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
 }
 main {
   background-image: url("../img/home/background.png");
@@ -30,16 +34,16 @@ form{
   margin-top: 20px;
 }
 p{
-  font-size: 20pt;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 div.line{
   position: relative;
-  bottom: 20px;
-  left: 20px;
+  bottom: 16px;
+  left: 28%;
 
-  width: 300px;
+  width: 150px;
   height: 3px;
   background-color: #CE9184;
 }
@@ -83,6 +87,8 @@ button.btn-primary{
   background-color: #CE9184;
   color: #112137;
   font-weight: bold;
+  font-size: 2rem;
+
   border: 2px solid #000000;
   border-radius: 100px;
   box-shadow: 4px 4px 0px #000000;
@@ -98,8 +104,9 @@ button.btn-primary:hover{
 
 /* input do pin */
 form > h4{
-  text-shadow: 1px 8px 12px rgba(17, 33, 55, 0.8);
+  text-shadow: 1px 8px 20px rgba(17, 33, 55, 0.8);
   margin-top: 20px;
+  font-size: 2rem;
 }
 
 .group-pin{
@@ -115,13 +122,57 @@ input.inp-pin{
 
   text-transform: uppercase;
   color: #000;
-  font-size: 24pt;
+  font-size: 3rem;
   text-align: center;
 }
 
 .pin-reenviar{
   color: #000;
-  font-size: 14pt;
-  text-shadow: 1px 8px 12px rgba(17, 33, 55, 0.8);
+  font-size: 2rem;
+  text-shadow: 1px 8px 20px rgba(17, 33, 55, 0.8);
 }
 
+
+@media (max-width: 430px) {
+  form{
+    width: 350px;
+  }
+}
+
+@media (max-width: 385px) {
+  form{
+    width: 320px;
+  }
+}
+
+@media (max-width: 346px) {
+  form{
+    width: 290px;
+  }
+  form p{
+    font-size: 2.8rem;
+  }
+  form h4{
+    font-size: 1.8rem;
+  }
+
+  div.line{
+    width: 140px;
+    left: 22%;
+  }
+
+  input.inp-pin{
+    width: 38px;
+    height: 46px;
+  }
+
+  .pin-reenviar{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 345px) {
+  form{
+    width: 270px;
+  }
+}

@@ -8,6 +8,7 @@
   --secondary-color: #112137;
   --third-color: #000000;
   --bg-itens: #CB8B7D;
+  --select-itens: rgba(203, 139, 125, 0.6);
 }
 *{
   margin: 0;
@@ -17,16 +18,19 @@
 body {
   overflow-x: hidden;
 }
+html{
+  font-size: 62.5%;
+}
+header.container{
+  width: 90% !important;
+  max-width: 980px;
 
-header, 
-.my-navbar,
-.my-hamburg{
-  background-color: var(--secondary-color) !important;
-  font-family: 'Big John' !important;
 }
 
-
 /* Hamburguer */
+.my-hamburg{
+  background-color: var(--secondary-color) !important;
+}
 #but-ham span {
   color: var(--secondary-color);
   background-color: black;
@@ -37,24 +41,34 @@ header,
 
 
 /*  navbar */
-.my-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10px 10px 200px;
+header {
+  background-color: var(--secondary-color);
+  padding: 1rem 4rem 1rem 4rem;
+}
+nav.navbar{
+  font-family: 'Big John' !important;
+  background-color: var(--secondary-color) !important;
+}
+ul.navbar-nav{
+  margin-left: auto;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+a.navbar-brand{
+  margin-left: 50px !important;
 }
 
 .abas a {
   display: flex;
   gap: 1em;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: -13px;
 }
 .abas a:hover {
-  color: #fff;
+  color: var(--select-itens) !important;
   transition: 0.3 ease;
-  text-decoration: underline var(--bg-itens);
 }
 
 li .nav-link {
@@ -62,28 +76,34 @@ li .nav-link {
   padding-left: 25px !important;
 }
 
-.my-collapse {
-  padding-left: 680px;
-}
 li {
-  padding: 13px;
+  padding: 1.3rem;
 }
-
 
 /* media queries */
+@media (max-width: 992px) {
+  .navbar-collapse{
+    width: 100%;
+    height: 100vh;
+    margin: auto !important;
+    flex-grow: 1 !important;
+    background-color: var(--secondary-color);
+  }
+}
+
 @media (max-width: 575.98px){
-  .my-navbar{
-    padding: 10px 10px 10px 40px;
+  header{
+    padding: 1rem;
   }
   .navbar-brand img{
     width: 58px;
     height: 58px;
   }
-  .my-collapse {
-    padding-left: 20px;
+  .navbar-collapse {
+    padding-left: 2rem;
   }
   .abas a {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   
 }
