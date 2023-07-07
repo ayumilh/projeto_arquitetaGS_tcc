@@ -140,10 +140,31 @@ header span{
     background-color: #008605;
 }
 
+@media (max-width: 992px) {
+
+}
+
 @media (max-width: 636px) {
     .card-text{
         font-size: 0.9rem;
     }
+
+    /* modal: geral */
+    .modal h1{
+        font-size: 1.6rem;
+    }
+
+    /* modal: notas fiscais */
+    #modalNotaFiscal small{
+        white-space: wrap !important;
+    }
+    .modal-notas--info h6{
+        font-size: 1.2rem;
+    }
+    .modal-notas--info p{
+        font-size: 0.9rem;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -196,4 +217,30 @@ header span{
         width: 26px;
         height: 26px;
     }
+
+    /* modal: geral */
+    .modal h1{
+        font-size: 1.2rem;
+    }
+
+
+    /* modal: notas fiscais */
+    #modalNotaFiscal img{
+        width: 26px;
+        height: 26px;
+    }
+    #modalNotaFiscal small{
+        font-size: 0.7rem;
+    }
+    .modal-notas--info h6{
+        font-size: 1rem;
+    }
+    .modal-notas--info p{
+        font-size: 0.8rem;
+    }
+    .modal-notas--info a{
+        font-size: 0.7rem;
+    }
+
+    /* modal: controle financeiro */
 }

@@ -214,10 +214,9 @@
                       </div>
   
                       <div class="modal-body mt-3 me-5">
-                        <div class="row g-2">
-  
-                          <div class="col-md mb-lg-3">
-                            <div class="form-floating">
+                        <form action="" method="post">
+                          <div class="row g-3">
+                            <div class="form-floating col-lg-6">
                               <select class="form-select" id="floatingSelectGrid">
                                 <option selected></option>
                                 <option value="1">Iluminacao</option>
@@ -226,35 +225,23 @@
                               </select>
                               <label for="floatingSelectGrid">Escolha o serviço</label>
                             </div>
-                          </div>
-  
-                          <div class="col-md">
-                            <div class="form-floating">
+
+                            <div class="form-floating col-lg-6">
                               <input type="date" class="form-control" id="floatingInputGrid">
                               <label for="floatingInputGrid">Data</label>
                             </div>
-                          </div>
-                        </div>
-  
-                        <div class="row g-2">
-                          
-                          <div class="col-md">
-                            <div class="input-group mb-3">
-                              <span class="input-group-text bg-light">R$</span>
-                              <div class="form-floating">
-                                <input type="text" class="form-control" placeholder="00.00">
-                                <label for="floatingInputGroup1">Valor</label>
-                              </div>
+
+                            <div class="form-floating col-lg-6">
+                              <input type="text" class="form-control" id="floatingInputGrid" placeholder="00.00">
+                              <label for="floatingInputGrid">Valor</label>
                             </div>
-                          </div>
                           
-                          <div class="col-md">
-                            <div class="form-floating">
+                            <div class="form-floating col-lg-6">
                               <input type="file" class="form-control" id="floatingInputGrid">
                               <label for="floatingInputGrid">Anexo</label>
                             </div>
                           </div>
-                        </div>
+                        </form>
   
                         <!-- receita x despesas -->
                         <div class="container">
