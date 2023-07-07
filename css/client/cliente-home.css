@@ -12,7 +12,7 @@ body{
 }
 
 /* sidebar */
-nav.col-1{
+nav.col-2{
     max-width: 95px !important;
 }
 nav{
@@ -138,6 +138,21 @@ header span{
 }
 .btn-enviar{
     background-color: #008605;
+}
+
+@media (max-width: 636px) {
+    .card-text{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-6{
+        width: 100% !important;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 460px) and (min-width: 425px) {
