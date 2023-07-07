@@ -147,31 +147,53 @@ header span{
 }
 
 @media (max-width: 576px) {
+    .list-budgets .row{
+        margin-left: 10px;
+    }
     .col-sm-6{
         width: 100% !important;
     }
     .card-text{
         font-size: 1rem;
     }
+
+    .exit{
+        position: relative;
+        top: 20px;
+    }
 }
 
-@media (max-width: 460px) and (min-width: 425px) {
+@media (max-width: 460px) and (min-width: 426px) {
+    .card-frame{
+        padding: 20px;
+    }
     .card{
         max-width: 18rem;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     header span{
         font-size: 1.6rem;
     }
     .row{
         max-width: auto !important;
     }
-    .list-budgets .row{
-        margin-left: 20px;
-    }
     .card{
         max-width: 17rem;
+    }
+}
+
+@media (max-width: 376px) {
+    header span{
+        font-size: 1.4rem;
+    }
+    .sidebar-logo img{
+        width: 58px;
+        height: 58px;
+    }
+    .sidebar-icons .bi{
+        width: 26px;
+        height: 26px;
     }
 }
