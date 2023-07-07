@@ -140,10 +140,6 @@ header span{
     background-color: #008605;
 }
 
-@media (max-width: 992px) {
-
-}
-
 @media (max-width: 636px) {
     .card-text{
         font-size: 0.9rem;
@@ -179,7 +175,6 @@ header span{
     }
 
     .exit{
-        position: relative;
         top: 20px;
     }
 }
