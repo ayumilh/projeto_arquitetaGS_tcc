@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Big John';
-  src: url(../font/Big_John_PRO/bigjohnpro-regular.otf)
+  src: url(../../font/Big_John_PRO/bigjohnpro-regular.otf)
 }
 :root{
   --bg-primary: #FFFFFF;

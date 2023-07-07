@@ -1,0 +1,14 @@
+:root{
+  --bg-primary: #FFFFFF;
+  --cinza: #8F9BB7;
+  --secondary-color: #112137;
+  --third-color: #000000;
+  --bg-itens: #CB8B7D;
+}
+body{
+  background-color: var(--bg-primary);  
+}
+
+body > .container{
+  max-width: 980px !important;
+}

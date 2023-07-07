@@ -11,8 +11,7 @@ CREATE TABLE cliente (
     telefone1 VARCHAR(15) NOT NULL,
     telefone2 VARCHAR(15),
     endereco_atual VARCHAR(200) NOT NULL,
-    endereco_projeto VARCHAR(200) NOT NULL,
-    fatura_disponivel VARCHAR(10) NOT NULL
+    data_fatura VARCHAR(10) NOT NULL
 );
 
 -- Tabela projeto
@@ -21,7 +20,8 @@ CREATE TABLE projeto (
     pin_projeto VARCHAR(5) PRIMARY KEY NOT NULL,
     planta VARCHAR(200) NOT NULL,
     empreendimento VARCHAR(100) NOT NULL,
-    M2 DECIMAL(3, 2) NOT NULL,
+    endereco_projeto VARCHAR(200) NOT NULL,
+    M2 varchar(5) NOT NULL,
     previsao_entrega VARCHAR(10) NOT NULL,
     FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
 );

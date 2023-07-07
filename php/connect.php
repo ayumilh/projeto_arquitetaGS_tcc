@@ -2,7 +2,7 @@
 $localhost = 'localhost';
 $host      = 'root';
 $password  = '';
-$database  = 'Cadastro';
+$database  = 'cadastro';
 
 $sql = new mysqli($localhost, $host, $password, $database);
 if($sql->connect_errno){
