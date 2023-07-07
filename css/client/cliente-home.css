@@ -8,9 +8,13 @@
 
 body{
     background-color: var(--bg-primary);  
+    font-size: 62.5%;
 }
 
 /* sidebar */
+nav.col-1{
+    max-width: 95px !important;
+}
 nav{
     background-color: var(--secondary-color);
 }
@@ -32,9 +36,11 @@ header{
     height: 100px;
     text-align: center;
     justify-content: center;
-    font-size: 15pt;
+    font-size: 2rem;
 }
-
+header span{
+    font-size: 2rem;
+}
 .section{
     display: flex;
     height: 100px;
@@ -49,7 +55,12 @@ header{
     width: auto;
     height: 56px;
     border-radius: 15px;
-    border-color: var(--secondary-color);
+    /* border-color: var(--secondary-color); */
+}
+
+/* modal: geral */
+.modal h1{
+    font-size: 1.8rem;
 }
 
 /* cards */
@@ -64,31 +75,60 @@ header{
 .list-budgets .row{
     margin-left: 40px;
 }
-
+.card{
+    max-width: 20rem;
+}
 .card-header{
     border-bottom: var(--secondary-color) solid var(--secondary-color);
+}
+.card_title{
+    font-size: 1.3rem;
+}
+.card-text{
+    font-size: 1.1rem;
 }
 .card-frame{
     background-color: var(--secondary-color);
     box-sizing: border-box;
     border-radius: 10px;
     padding: 8px 12px;
-    width: 360px;
     height: 250px;
-    box-shadow: 6px 7px 9px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2) !important;
+    transition: 0.2s;
+}
+.card-frame:hover{
+    transition: 0.2s;
+    border-radius: 13px;
+    box-shadow: 0px 6px 12px -2px rgb(50, 50, 93, 0.25), 0px 3px 7px -3px rgba(0, 0, 0, 3) !important;
+}
+/* modal: notas fiscais */
+#modalNotaFiscal small{
+    font-size: 0.8rem;
+}
+.modal-notas--info h6{
+    font-size: 1.2rem;
+}
+.modal-notas--info p{
+    font-size: 1rem;
 }
 
 /* modal: cotrole financeiro */
 .modal-header{
     background-color: var(--secondary-color);
 }
-
+.modal-body{
+    font-size: 1.2rem;
+}
 .info{
     background-color: var(--bg-itens);
     border-radius: 20px;
     filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.25));
     margin-top: 10px;
     font-weight: 600;
+}
+.receita,
+.despesa{
+    font-size: 1rem;
 }
 .receita{
     color: #008605;
@@ -100,3 +140,23 @@ header{
     background-color: #008605;
 }
 
+@media (max-width: 460px) and (min-width: 425px) {
+    .card{
+        max-width: 18rem;
+    }
+}
+
+@media (max-width: 425px) {
+    header span{
+        font-size: 1.6rem;
+    }
+    .row{
+        max-width: auto !important;
+    }
+    .list-budgets .row{
+        margin-left: 20px;
+    }
+    .card{
+        max-width: 17rem;
+    }
+}
