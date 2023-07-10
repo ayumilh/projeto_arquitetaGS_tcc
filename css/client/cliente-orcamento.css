@@ -70,7 +70,7 @@ main{
 }
 .desabilitado{
   background-color: rgb(220, 53, 69);
-  filter: blur(3px);
+  filter: blur(2px);
   color: var(--bg-primary);
 }
 
@@ -111,7 +111,7 @@ main{
   }
   .btn-selecao{
     margin-right: 50px;
-    width: 120px;
+    width: 100px;
     height: 34px;
   }
   .bloco-notas{
