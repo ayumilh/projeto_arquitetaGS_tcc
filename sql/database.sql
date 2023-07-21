@@ -35,7 +35,15 @@ CREATE TABLE notaFiscal (
     FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
 );
 
-
+-- Tabela arquivos
+CREATE TABLE arquivos (
+    id_cliente INT,
+    nome_arquivo VARCHAR(200) NOT NULL,
+    caminho_arquivo VARCHAR(255) NOT NULL,
+    observacao VARCHAR(255),
+    data_publicacao VARCHAR(10) NOT NULL,
+    FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
+);
 
 SELECT * FROM cliente WHERE cpf = '58962188856';
 
