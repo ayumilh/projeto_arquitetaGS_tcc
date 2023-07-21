@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Lançar nota fiscal</title>
+  <title>Lançar arquivos</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,13 +16,13 @@
 <body>
   <div class="container">
     <main class="row g-5">
-      <h4>Lançar nota fiscal</h4>
-      <form enctype="multipart/form-data" action="../../php/admin/lancar-nota-fiscal.php" method="post" enctype="multipart/form-data" class="col">
+      <h4>Lançar arquivos</h4>
+      <form enctype="multipart/form-data" action="../../php/admin/lancar-arquivos.php" method="post" enctype="multipart/form-data" class="col">
         <div class="row g-3">
           <!-- <input type="hidden" name="MAX_FILE_SIZE" value="30000"/>  tamanho limite aceito pelo php -->
           <div class="form-floating col-sm-6">
-            <input type="file" class="form-control" name="caminho_arquivo" placeholder="nota fiscal">
-            <label for="caminho_arquivo">Nota fiscal</label>
+            <input type="file" class="form-control" name="caminho_arquivo" placeholder="arquivo">
+            <label for="caminho_arquivo">Arquivo</label>
           </div>
           <div class="form-floating col-sm-6">
             <input type="text" class="form-control" name="nome_arquivo" placeholder="titulo do arquivo">
@@ -38,7 +38,7 @@
           </div>
         </div>
         <hr class="my-4">
-          <button class="w-100 btn btn-primary btn-lg" type="submit" value="send_nota">send</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit" value="send_arquivo">send</button>
       </form>
     </main>
   </div>
