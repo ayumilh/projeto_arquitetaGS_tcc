@@ -79,7 +79,7 @@
             <div class="list-budgets">
               <div class="row">
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./empreiteira.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/empreiteira.html';">
                     <div class="card-header"><img src="../../img/client/emprenteira.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Emprenteira</h5>
@@ -89,7 +89,7 @@
                 </div>
                 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./iluminacao.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/iluminacao.html';">
                     <div class="card-header"><img src="../../img/client/iluminacao.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Iluminação</h5>
@@ -99,7 +99,7 @@
                 </div> <!-- col -->
   
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./vidracaria.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/vidracaria.html';">
                     <div class="card-header"><img src="../../img/client/vidracaria.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Vidraçaria</h5>
@@ -109,7 +109,7 @@
                 </div>
                 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./marcenaria.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marcenaria.html';">
                     <div class="card-header"><img src="../../img/client/marcenaria.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Marcenaria</h5>
@@ -119,7 +119,7 @@
                 </div> <!-- col -->
   
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./ar_cond.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/ar_cond.html';">
                     <div class="card-header"><img src="../../img/client/ar.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Ar-condicionado</h5>
@@ -129,7 +129,7 @@
                 </div>
                 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./marmoraria.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marmoraria.html';">
                     <div class="card-header"><img src="../../img/client/marmoraria.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Marmoraria</h5>
@@ -139,7 +139,7 @@
                 </div> <!-- col -->
   
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='./revestimento.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/revestimento.html';">
                     <div class="card-header"><img src="../../img/client/revestimento.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Revestimento</h5>
@@ -150,6 +150,23 @@
   
                 <!-- modal: nota fiscal--> 
               <div class="modal fade modal-lg" id="modalNotaFiscal" tabindex="-1"  aria-hidden="true">
+                <?php
+                  include("../connect.php");
+                  $query_dados = "SELECT * FROM notaFiscal WHERE id_cliente = '1'";
+
+                  $query_row = $sql->query($query_dados);
+                  if($query_row->num_rows > 0){
+                    $row = $query_row->fetch_assoc();
+
+                    $nome_arquivo    = $row['nome_arquivo'];
+                    $caminho_arquivo = $row['caminho_arquivo'];
+                    $obs_arquivo     = $row['observacao'];
+                    $data_publicacao = $row['data_publicacao'];
+
+                  } else{
+                    echo "Os dados nao foram encontrados";
+                  }
+                ?>
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -163,11 +180,11 @@
                         <img src="../../img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                           <div class="modal-notas--info">
-                            <h6 class="mb-0">Marcenaria</h6>
-                            <p class="mb-0 opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <p><a href="#" class="">Clique para visualizar</a></p>
+                            <h6 class="mb-0"><span><?=$nome_arquivo?></span></h6>
+                            <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
+                            <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
                           </div>
-                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
+                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
                         </div>
                       </div>
   
@@ -175,11 +192,11 @@
                         <img src="../../img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                           <div class="modal-notas--info">
-                            <h6 class="mb-0">iluminacao</h6>
-                            <p class="mb-0 opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <p><a href="#" class="">Clique para visualizar</a></p>
+                            <h6 class="mb-0"><?=$nome_arquivo?></h6>
+                            <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
+                            <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
                           </div>
-                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
+                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
                         </div>
                       </div>
   
@@ -187,11 +204,11 @@
                         <img src="../../img/client/icon_pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
                         <div class="d-flex gap-2 w-100 justify-content-between">
                           <div class="modal-notas--info">
-                            <h6 class="mb-0">Vidro</h6>
-                            <p class="mb-0 opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
-                            <p><a href="#" class="">Clique para visualizar</a></p>
+                            <h6 class="mb-0"><?=$nome_arquivo?></h6>
+                            <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span>.</p>
+                            <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
                           </div>
-                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> 22/05/2023</small>
+                          <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
                         </div>
                       </div>
                       </div>

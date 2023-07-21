@@ -1,7 +1,6 @@
 CREATE DATABASE cadastro;
 
 USE cadastro;
-
 -- Tabela cliente
 CREATE TABLE cliente (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
@@ -26,12 +25,25 @@ CREATE TABLE projeto (
     FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
 );
 
+-- Tabela nota fiscal
+CREATE TABLE notaFiscal (
+    id_cliente INT,
+    nome_arquivo VARCHAR(200) NOT NULL,
+    caminho_arquivo VARCHAR(255) NOT NULL,
+    observacao VARCHAR(255),
+    data_publicacao VARCHAR(10) NOT NULL,
+    FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
+);
+
+
 
 SELECT * FROM cliente WHERE cpf = '58962188856';
+
+INSERT INTO cliente VALUES(DEFAULT, 'lara Ayumi', "58962188856", "123456789101", "1234565432", "000000000", "Rua nestor", "2023-01-06");
 
 SELECT * FROM projeto WHERE pin = '11111';
 
 -- insert 
-INSERT INTO cliente VALUES(DEFAULT, 'lara Ayumi', 58962188856);
+
 
 INSERT INTO projeto VALUES(11111, 2, 'Lara Ayumi', '20230529');

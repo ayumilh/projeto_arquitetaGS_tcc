@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <main class="row g-5">
+      <h4>Lançar nota fiscal</h4>
+      <form enctype="multipart/form-data" action="../../php/admin/lancar-nota-fiscal.php" method="post" enctype="multipart/form-data" class="col">
+        <div class="row g-3">
+          <!-- <input type="hidden" name="MAX_FILE_SIZE" value="30000"/>  tamanho limite aceito pelo php -->
+          <div class="form-floating col-sm-6">
+            <input type="file" class="form-control" name="caminho_arquivo" placeholder="nota fiscal">
+            <label for="caminho_arquivo">Nota fiscal</label>
+          </div>
+          <div class="form-floating col-sm-6">
+            <input type="text" class="form-control" name="nome_arquivo" placeholder="titulo do arquivo">
+            <label for="nome_arquivo">Titulo do arquivo</label>
+          </div>
+          <div class="form-floating col-sm-6">
+            <input type="text" class="form-control" name="obs_arquivo" placeholder="obs do arquivo">
+            <label for="obs_arquivo">Observação</label>
+          </div>
+          <div class="form-floating col-sm-6">
+            <input type="date" class="form-control" name="data_arquivo" placeholder="data de envio arquivo">
+            <label for="data_arquivo">Data de envio</label>
+          </div>
+        </div>
+        <hr class="my-4">
+          <button class="w-100 btn btn-primary btn-lg" type="submit" value="send_nota">send</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
