@@ -300,9 +300,14 @@
                         <!-- receita x despesas -->
                         <div class="container">
                           <div class="row mt-5">
-                            <button type="submit" name="receita_servico" class="col info p-1 receita">Receita</button>
-
-                            <button type="submit" name="despesa_servico" class="col info despesa">Despesa</button>
+                            <!-- <button type="submit" name="receita_servico" class="col info p-1 receita">Receita</button> -->
+                            <!-- <button type="submit" name="despesa_servico" class="col info despesa">Despesa</button> -->
+                            <div class="col info me-2 p-3 receita">
+                              <label><input type="radio" name="status" value="Receita"> <span>Receita</span></label>
+                            </div>
+                            <div class="col info p-3 despesa">
+                              <label><input type="radio" name="status" value="Despesa"> <span>Despesa</span></label>
+                            </div>
                           </div>
                         </div>
                       </div>
