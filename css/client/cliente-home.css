@@ -130,10 +130,13 @@ header span{
 
 .receita,
 .despesa{
+    background-color: var(--bg-itens);
+    border: transparent;
     font-size: 1rem;
 }
 .receita{
     color: #008605;
+    margin-right: 10px;
 }
 .despesa{
     color: #AB0000;

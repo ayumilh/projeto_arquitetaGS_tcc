@@ -20,9 +20,9 @@
       <nav class="col-2">
         <div class="d-flex flex-column sidebar align-items-center">
           <a href="../../index.html" class="d-block align-items-center sidebar-logo">
-            <img src="../../img/home/logotipo.png" alt="logotipo" width="62" height="62" />
+            <img src="../../img/home/logotipo.png" alt="logotipo" width="62" height="62"/>
           </a>
-          <hr />
+          <hr/>
 
           <ul class="nav nav-pills flex-column mb-auto text-center list-icon">
             <li class="sidebar-icons">
@@ -300,12 +300,9 @@
                         <!-- receita x despesas -->
                         <div class="container">
                           <div class="row mt-5">
-                            <div class="col info me-2 p-3">
-                              <button type="submit" name="receita_servico" class="receita">Receita</button>
-                            </div>
-                            <div class="col info p-3">
-                              <button type="submit" name="despesa_servico" class="despesa">Despesa</button>
-                            </div>
+                            <button type="submit" name="receita_servico" class="col info p-1 receita">Receita</button>
+
+                            <button type="submit" name="despesa_servico" class="col info despesa">Despesa</button>
                           </div>
                         </div>
                       </div>
