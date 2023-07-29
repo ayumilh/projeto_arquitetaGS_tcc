@@ -61,10 +61,10 @@
         <div class="container">
           <div class="row mt-5">
             <div class="col info me-2 p-3 receita">
-              <label for="">Receita</label>
+              <label><input type="radio" name="status" value="Receita"> <span>Receita</span></label>
             </div>
             <div class="col info p-3 despesa">
-              <label for="" class="">Despesas</label>
+              <label><input type="radio" name="status" value="Despesa"> <span>Despesa</span></label>
             </div>
           </div>
         </div>

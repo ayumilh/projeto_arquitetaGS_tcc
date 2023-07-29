@@ -11,20 +11,19 @@
   <?php
   include("../connect.php");
 
-    $uploadDir     = '../../download/arquivos/';
-    $caminho       = $_FILES['anexo_servico']['name'];
-    $anexo = $uploadDir . basename($caminho);
+    $uploadDir = '../../download/arquivos/';
+    $caminho   = $_FILES['anexo_servico']['name'];
+    $anexo     = $uploadDir . basename($caminho);
+    $servico   = $_POST['selecao_servico'];
+    $status    = $_POST['status'];
     
-    $valor   = $_POST['valor_servico'];
+    $valor = $_POST['valor_servico'];
     $data  = $_POST['data_servico'];
-
-    $servico = $_POST['selecao_servico'];
-
 
 
     if(move_uploaded_file($_FILES["anexo_servico"]["tmp_name"], $anexo)){
       // mandar para o banco de dados
-      $query = "INSERT INTO controlefinanceiro(status, servico, data, valor, anexo) VALUE('Receita', '$servico', '$data', '$valor', '$anexo')";
+      $query = "INSERT INTO controlefinanceiro(status, servico, data, valor, anexo) VALUE('$status', '$servico', '$data', '$valor', '$anexo')";
 
       // verificar se a inserção foi bem sucedida
       if ($sql->query($query) === TRUE) {
