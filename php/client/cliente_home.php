@@ -22,7 +22,7 @@
           <a href="../../index.html" class="d-block align-items-center sidebar-logo">
             <img src="../../img/home/logotipo.png" alt="logotipo" width="62" height="62" />
           </a>
-          <hr/>
+          <hr />
 
           <ul class="nav nav-pills flex-column mb-auto text-center list-icon">
             <li class="sidebar-icons">
@@ -47,7 +47,7 @@
               </a>
             </li>
           </ul>
-          <hr/>
+          <hr />
           <div class="exit">
             <a href="#" class="d-flex align-items-center">
               <img src="../../img/client/exit.png" alt="exit" width="32" height="32">
@@ -65,7 +65,7 @@
                 <span class="fw-bold">Olá, Lara</span>
               </a>
             </header>
-            
+
             <!-- <div class="section justify-content-between align-content-between">
               <div class="group-btn justify-content-between align-content-between" role="group" aria-label="Basic checkbox toggle button group">
                           
@@ -80,76 +80,89 @@
               <div class="row">
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/empreiteira.html';">
-                    <div class="card-header"><img src="../../img/client/emprenteira.png" alt="" width="34" height="34"></div>
+                    <div class="card-header"><img src="../../img/client/emprenteira.png" alt="" width="34" height="34">
+                    </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Emprenteira</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/iluminacao.html';">
-                    <div class="card-header"><img src="../../img/client/iluminacao.png" alt="" width="34" height="34"></div>
+                    <div class="card-header"><img src="../../img/client/iluminacao.png" alt="" width="34" height="34">
+                    </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Iluminação</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div> <!-- card -->
                 </div> <!-- col -->
-  
+
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/vidracaria.html';">
-                    <div class="card-header"><img src="../../img/client/vidracaria.png" alt="" width="34" height="34"></div>
+                    <div class="card-header"><img src="../../img/client/vidracaria.png" alt="" width="34" height="34">
+                    </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Vidraçaria</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/marcenaria.html';">
-                    <div class="card-header"><img src="../../img/client/marcenaria.png" alt="" width="34" height="34"></div>
+                    <div class="card-header"><img src="../../img/client/marcenaria.png" alt="" width="34" height="34">
+                    </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Marcenaria</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div> <!-- card -->
                 </div> <!-- col -->
-  
+
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/ar_cond.html';">
                     <div class="card-header"><img src="../../img/client/ar.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Ar-condicionado</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/marmoraria.html';">
-                    <div class="card-header"><img src="../../img/client/marmoraria.png" alt="" width="34" height="34"></div>
+                    <div class="card-header"><img src="../../img/client/marmoraria.png" alt="" width="34" height="34">
+                    </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Marmoraria</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div> <!-- card -->
                 </div> <!-- col -->
-  
+
                 <div class="col-xl-4 col-sm-6">
                   <div class="card m-2 card-frame" onclick="window.location='../../html/client/revestimento.html';">
-                    <div class="card-header"><img src="../../img/client/revestimento.png" alt="" width="34" height="34"></div>
+                    <div class="card-header"><img src="../../img/client/revestimento.png" alt="" width="34" height="34">
+                    </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Revestimento</h5>
-                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do seu projeto. </p>
+                      <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
+                        seu projeto. </p>
                     </div>
                   </div>
                 </div>
-  
-                <!-- modal: nota fiscal--> 
-                <div class="modal fade modal-lg" id="modalNotaFiscal" tabindex="-1"  aria-hidden="true">
+
+                <!-- modal: nota fiscal-->
+                <div class="modal fade modal-lg" id="modalNotaFiscal" tabindex="-1" aria-hidden="true">
                   <?php
                     include("../connect.php");
                     $query_dados = "SELECT * FROM notaFiscal WHERE id_cliente = '1'";
@@ -171,116 +184,141 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title text-white" id="exampleModalLabel">Nota fiscal</h1>
-                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
                       </div>
                       <div class="modal-body m-3">
                         <div class="list-group w-auto h-auto">
-                        <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                          <img src="../../img/client/pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                          <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div class="modal-notas--info">
-                              <h6 class="mb-0"><span><?=$nome_arquivo?></span></h6>
-                              <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
-                              <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
+                          <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            aria-current="true">
+                            <img src="../../img/client/pdf.png" alt="twbs" width="30" height="30"
+                              class="flex-shrink-0 ms-2 mt-2">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                              <div class="modal-notas--info">
+                                <h6 class="mb-0"><span><?=$nome_arquivo?></span></h6>
+                                <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
+                                <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
+                              </div>
+                              <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                                <span><?=$data_publicacao?></span></small>
                             </div>
-                            <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
                           </div>
-                        </div>
-    
-                        <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                          <img src="../../img/client/pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                          <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div class="modal-notas--info">
-                              <h6 class="mb-0"><?=$nome_arquivo?></h6>
-                              <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
-                              <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
+
+                          <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            aria-current="true">
+                            <img src="../../img/client/pdf.png" alt="twbs" width="30" height="30"
+                              class="flex-shrink-0 ms-2 mt-2">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                              <div class="modal-notas--info">
+                                <h6 class="mb-0"><?=$nome_arquivo?></h6>
+                                <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
+                                <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
+                              </div>
+                              <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                                <span><?=$data_publicacao?></span></small>
                             </div>
-                            <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
                           </div>
-                        </div>
-    
-                        <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                          <img src="../../img/client/pdf.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                          <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div class="modal-notas--info">
-                              <h6 class="mb-0"><?=$nome_arquivo?></h6>
-                              <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span>.</p>
-                              <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
+
+                          <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            aria-current="true">
+                            <img src="../../img/client/pdf.png" alt="twbs" width="30" height="30"
+                              class="flex-shrink-0 ms-2 mt-2">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                              <div class="modal-notas--info">
+                                <h6 class="mb-0"><?=$nome_arquivo?></h6>
+                                <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span>.</p>
+                                <p><a href="<?=$caminho_arquivo?>" download class="">Download do PDF</a></p>
+                              </div>
+                              <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                                <span><?=$data_publicacao?></span></small>
                             </div>
-                            <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
                           </div>
-                        </div>
                         </div>
                       </div>
                       <div class="modal-footer">
-                        
+
                       </div>
                     </div>
                   </div>
                 </div>
-  
-  
+
+
                 <!-- modal: controle financeiro -->
-                <div class="modal fade modal-lg" id="modalCtlFinanceiro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalArquivos" aria-hidden="true">
+                <div class="modal fade modal-lg" id="modalCtlFinanceiro" data-bs-backdrop="static"
+                  data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalArquivos" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title text-white" id="modalCtlFinanceiroLabel">Controle financeiro</h1>
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
                       </div>
-  
+
                       <div class="modal-body mt-3 me-5">
                         <form action="" method="post">
                           <div class="row g-3">
                             <div class="form-floating col-lg-6">
-                              <select class="form-select" id="floatingSelectGrid">
+                              <select class="form-select" id="selecao_servico">
                                 <option selected></option>
-                                <option value="1">Iluminacao</option>
-                                <option value="2">Marcenaria</option>
-                                <option value="3">Revestimento</option>
+                                <?php
+                                include('../connect.php');
+                                $query = "SELECT * FROM servicos";
+                                $result = $sql->query($query);
+
+                                // Gera as opções dinamicamente
+                                if($result->num_rows > 0){
+                                  while($row = $result->fetch_assoc()){
+                                    $id_servico = $row["id_servico"];
+                                    $servico = $row["servico"];
+                                    echo "<option value='$id_servico'>$servico</option>";
+                                  }
+                                }else{
+                                  echo "deu errado";
+                                }
+                                ?>
                               </select>
-                              <label for="floatingSelectGrid">Escolha o serviço</label>
+                              <label for="selecao_servico">Escolha o serviço</label>
                             </div>
 
                             <div class="form-floating col-lg-6">
-                              <input type="date" class="form-control" id="floatingInputGrid">
-                              <label for="floatingInputGrid">Data</label>
+                              <input type="date" class="form-control" name="data_servico">
+                              <label for="data_servico">Data</label>
                             </div>
 
                             <div class="form-floating col-lg-6">
-                              <input type="text" class="form-control" id="floatingInputGrid" placeholder="00.00">
-                              <label for="floatingInputGrid">Valor</label>
+                              <input type="text" class="form-control" name="valor_servico" placeholder="00.00">
+                              <label for="valor_servico">Valor</label>
                             </div>
-                          
+
                             <div class="form-floating col-lg-6">
-                              <input type="file" class="form-control" id="floatingInputGrid">
-                              <label for="floatingInputGrid">Anexo</label>
+                              <input type="file" class="form-control" name="anexo_servico">
+                              <label for="anexo_servico">Anexo</label>
                             </div>
                           </div>
                         </form>
-  
+
                         <!-- receita x despesas -->
                         <div class="container">
                           <div class="row mt-5">
-                            <div class="col info me-2 p-3 receita">
-                              <label for="">Receita</label>
+                            <div class="col info me-2 p-3">
+                              <button type="submit" name="receita_servico" class="receita">Receita</button>
                             </div>
-                            <div class="col info p-3 despesa">
-                              <label for="" class="">Despesas</label>
+                            <div class="col info p-3">
+                              <button type="submit" name="despesa_servico" class="despesa">Despesa</button>
                             </div>
                           </div>
                         </div>
-  
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-enviar" data-bs-dismiss="modal">Enviar</button>
+                        <button type="button" class="btn btn-secondary btn-enviar"
+                          data-bs-dismiss="modal">Enviar</button>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- modal: arquivos --> 
-                <div class="modal fade modal-lg" id="modalArquivos" tabindex="-1"  aria-hidden="true">
+                <!-- modal: arquivos -->
+                <div class="modal fade modal-lg" id="modalArquivos" tabindex="-1" aria-hidden="true">
                   <?php
                     include("../connect.php");
                     $query_dados = "SELECT * FROM arquivos WHERE id_cliente = '1'";
@@ -302,55 +340,60 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title text-white" id="exampleModalLabel">Arquivos</h1>
-                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
                       </div>
                       <div class="modal-body m-3">
                         <div class="list-group w-auto h-auto">
-                        <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                          <img src="../../img/client/png.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                          <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div class="modal-notas--info">
-                              <h6 class="mb-0"><span><?=$nome_arquivo?></span></h6>
-                              <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
-                              <p><a href="<?=$caminho_arquivo?>" download class="">Download</a></p>
+                          <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            aria-current="true">
+                            <img src="../../img/client/png.png" alt="twbs" width="30" height="30"
+                              class="flex-shrink-0 ms-2 mt-2">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                              <div class="modal-notas--info">
+                                <h6 class="mb-0"><span><?=$nome_arquivo?></span></h6>
+                                <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
+                                <p><a href="<?=$caminho_arquivo?>" download class="">Download</a></p>
+                              </div>
+                              <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                                <span><?=$data_publicacao?></span></small>
                             </div>
-                            <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
+                          </div>
+
+                          <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            aria-current="true">
+                            <img src="../../img/client/png.png" alt="twbs" width="30" height="30"
+                              class="flex-shrink-0 ms-2 mt-2">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                              <div class="modal-notas--info">
+                                <h6 class="mb-0"><?=$nome_arquivo?></h6>
+                                <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
+                                <p><a href="<?=$caminho_arquivo?>" download class="">Download</a></p>
+                              </div>
+                              <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                                <span><?=$data_publicacao?></span></small>
+                            </div>
+                          </div>
+
+                          <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            aria-current="true">
+                            <img src="../../img/client/png.png" alt="twbs" width="30" height="30"
+                              class="flex-shrink-0 ms-2 mt-2">
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                              <div class="modal-notas--info">
+                                <h6 class="mb-0"><?=$nome_arquivo?></h6>
+                                <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span>.</p>
+                                <p><a href="<?=$caminho_arquivo?>" download class="">Download</a></p>
+                              </div>
+                              <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                                <span><?=$data_publicacao?></span></small>
+                            </div>
                           </div>
                         </div>
-    
-                        <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                          <img src="../../img/client/png.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                          <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div class="modal-notas--info">
-                              <h6 class="mb-0"><?=$nome_arquivo?></h6>
-                              <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span></p>
-                              <p><a href="<?=$caminho_arquivo?>" download class="">Download</a></p>
-                            </div>
-                            <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
-                          </div>
-                        </div>
-    
-                        <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                          <img src="../../img/client/png.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                          <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div class="modal-notas--info">
-                              <h6 class="mb-0"><?=$nome_arquivo?></h6>
-                              <p class="mb-0 opacity-75"><span><?=$obs_arquivo?></span>.</p>
-                              <p><a href="<?=$caminho_arquivo?>" download class="">Download</a></p>
-                            </div>
-                            <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label> <span><?=$data_publicacao?></span></small>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        
                       </div>
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div> <!-- main -->
           </div>
@@ -362,12 +405,12 @@
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

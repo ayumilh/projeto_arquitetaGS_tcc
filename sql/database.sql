@@ -2,8 +2,8 @@ CREATE DATABASE cadastro;
 
 USE cadastro;
 -- Tabela cliente
-CREATE TABLE cliente (
-    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE cliente(
+    id_cliente SMALLINT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     cpf VARCHAR(14) NOT NULL,
     rg VARCHAR(12) NOT NULL,
@@ -14,8 +14,8 @@ CREATE TABLE cliente (
 );
 
 -- Tabela projeto
-CREATE TABLE projeto (
-    id_cliente INT,
+CREATE TABLE projeto(
+    id_cliente SMALLINT,
     pin_projeto VARCHAR(5) PRIMARY KEY NOT NULL,
     planta VARCHAR(200) NOT NULL,
     empreendimento VARCHAR(100) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE projeto (
 
 -- Tabela nota fiscal
 CREATE TABLE notaFiscal (
-    id_cliente INT,
+    id_cliente SMALLINT,
     nome_arquivo VARCHAR(200) NOT NULL,
     caminho_arquivo VARCHAR(255) NOT NULL,
     observacao VARCHAR(255),
@@ -36,14 +36,41 @@ CREATE TABLE notaFiscal (
 );
 
 -- Tabela arquivos
-CREATE TABLE arquivos (
-    id_cliente INT,
+CREATE TABLE arquivos(
+    id_cliente SMALLINT,
     nome_arquivo VARCHAR(200) NOT NULL,
     caminho_arquivo VARCHAR(255) NOT NULL,
     observacao VARCHAR(255),
     data_publicacao VARCHAR(10) NOT NULL,
     FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
 );
+
+-- Tabela financeiro
+CREATE TABLE controleFinanceiro(
+    id_cliente SMALLINT,
+    status ENUM('Receita', 'Despesa'),
+    servico VARCHAR(16),
+    data DATE,
+    valor DECIMAL(10,2),
+    anexo VARCHAR(255),
+    FOREIGN KEY(id_cliente) REFERENCES cliente(id_cliente)
+);
+
+-- Tabela de serviços
+CREATE TABLE servicos(
+    id_servico SMALLINT PRIMARY KEY AUTO_INCREMENT,
+    servico VARCHAR(20)
+);
+
+INSERT INTO servicos(servico) VALUES
+('Emprenteira'),
+('Iluminação'),
+('Vidraçaria'),
+('Marcenaria'),
+('Ar-condicionado'),
+('Marmoraria'),
+('Revestimento');
+
 
 SELECT * FROM cliente WHERE cpf = '58962188856';
 
