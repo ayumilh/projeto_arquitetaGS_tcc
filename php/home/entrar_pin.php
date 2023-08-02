@@ -8,20 +8,28 @@
 </head>
 <body>
 <?php
+include('../connect.php');
+session_start();
+
 if(isset($_POST['verificar'])){
-  include('connect.php');
+  $pin_projeto = $_POST['pin-0'].$_POST['pin-1']. $_POST['pin-2']. $_POST['pin-3']. $_POST['pin-4'];
 
-  if(isset($_POST['verificar'])){
-    $array_user = $_POST['pin-0'].$_POST['pin-1']. $_POST['pin-2']. $_POST['pin-3']. $_POST['pin-4'];
+  $select_pin = "SELECT * FROM projeto WHERE pin_projeto = '$pin_projeto'";
+  $query_pin = $sql->query($select_pin);
 
-    $query_pin = $sql->query("SELECT * FROM projeto WHERE pin = '$array_user'");
-    $check_pin = mysqli_num_rows($query_pin);
-
-    if($check_pin =! 1){
-      echo '<p>Houve um erro na verificação do pin, por favor insira novamente</p>';
-    }else{
-      echo '<p>aeeee deu certo!!!</p>';
+  if($query_pin->num_rows > 0){
+    while($row_projeto = $query_pin->fetch_assoc()){
+      $id_cliente  = $row_projeto['id_cliente'];
+      $pin_projeto = $row_projeto['pin_projeto'];
     }
+
+    $_SESSION['id_cliente'] = $id_cliente;
+    $_SESSION['pin_projeto'] = $pin_projeto;
+    header('location: ../client/cliente_home.php');
+  }else{
+    unset($_SESSION['id_cliente']);
+    unset($_SESSION['pin_projeto']);
+    header('location: ../../html/home/home-entrar.html');
   }
 }
 
