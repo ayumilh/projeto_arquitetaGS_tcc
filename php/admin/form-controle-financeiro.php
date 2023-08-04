@@ -20,6 +20,10 @@
       <form enctype="multipart/form-data" action="./lancar-controle-financeiro.php" method="post" class="col">
         <div class="row g-3">
           <div class="form-floating col-lg-6">
+            <input type="text" class="form-control" name="pin_projeto" placeholder="Pin do projeto">
+            <label for="pin_projeto">Pin do projeto</label>
+          </div>
+          <div class="form-floating col-lg-6">
             <select class="form-select" name="selecao_servico">
               <option selected></option>
               <?php

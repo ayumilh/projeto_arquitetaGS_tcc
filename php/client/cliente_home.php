@@ -176,17 +176,18 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 <div class="modal fade modal-lg" id="modalNotaFiscal" tabindex="-1" aria-hidden="true">
                   <?php
                     include("../connect.php");
-                    $query_dados = "SELECT * FROM notaFiscal WHERE id_cliente = '1'";
+                    $query_dados = "SELECT * FROM notaFiscal WHERE pin_projeto = '$pin_projeto'";
 
                     $query_row = $sql->query($query_dados);
                     if($query_row->num_rows > 0){
-                      $row = $query_row->fetch_assoc();
-
-                      $nome_arquivo    = $row['nome_arquivo'];
-                      $caminho_arquivo = $row['caminho_arquivo'];
-                      $obs_arquivo     = $row['observacao'];
-                      $data_publicacao = $row['data_publicacao'];
-
+                      while($row = $query_row->fetch_assoc()){
+                        $cod_notaFiscal  = $row['cod_notaFiscal'];
+                        $pin_projeto     = $row['pin_projeto']; 
+                        $nome_arquivo    = $row['nome_arquivo'];
+                        $caminho_arquivo = $row['caminho_arquivo'];
+                        $obs_arquivo     = $row['observacao'];
+                        $data_publicacao = $row['data_publicacao'];
+                      }
                     } else{
                       echo "Os dados nao foram encontrados";
                     }
@@ -327,22 +328,23 @@ if(!isset($_SESSION['pin_projeto']) == true){
 
                 <!-- modal: arquivos -->
                 <div class="modal fade modal-lg" id="modalArquivos" tabindex="-1" aria-hidden="true">
-                  <?php
-                    include("../connect.php");
-                    $query_dados = "SELECT * FROM arquivos WHERE id_cliente = '1'";
+                <?php
+                  include("../connect.php");
+                  $query_dados = "SELECT * FROM arquivos WHERE pin_projeto = '$pin_projeto'";
 
-                    $query_row = $sql->query($query_dados);
-                    if($query_row->num_rows > 0){
-                      $row = $query_row->fetch_assoc();
-
+                  $query_row = $sql->query($query_dados);
+                  if($query_row->num_rows > 0){
+                    while($row = $query_row->fetch_assoc()){
+                      $cod_arquivo     = $row['cod_arquivo'];
+                      $pin_projeto     = $row['pin_projeto']; 
                       $nome_arquivo    = $row['nome_arquivo'];
                       $caminho_arquivo = $row['caminho_arquivo'];
                       $obs_arquivo     = $row['observacao'];
                       $data_publicacao = $row['data_publicacao'];
-
-                    } else{
-                      echo "Os dados nao foram encontrados";
                     }
+                  } else{
+                    echo "Os dados nao foram encontrados";
+                  }
                   ?>
                   <div class="modal-dialog">
                     <div class="modal-content">

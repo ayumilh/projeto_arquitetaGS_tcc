@@ -23,7 +23,7 @@
     $pin = strtoupper(substr(bin2hex(random_bytes(4)), 3));
 
     // instrução SQL de inserção
-    $query = "INSERT INTO projeto (id_cliente, pin_projeto, planta, empreendimento, endereco_projeto, m2, previsao_entrega) VALUES ($id_cliente, '$pin', '$projeto_planta', '$projeto_empreendimento', '$endereco_projeto', '$projeto_m2', '$previsao_entrega')";
+    $query = "INSERT INTO projeto (pin_projeto, id_cliente, planta, empreendimento, endereco_projeto, m2, previsao_entrega) VALUES ('$pin', $id_cliente, '$projeto_planta', '$projeto_empreendimento', '$endereco_projeto', '$projeto_m2', '$previsao_entrega')";
 
      // verificar se a inserção foi bem sucedida
     if ($sql->query($query) === TRUE) {
