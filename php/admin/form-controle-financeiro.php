@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Lançar nota fiscal</title>
+  <title>Lançar controle financeiro</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +16,7 @@
 <body>
   <div class="container">
     <main class="row g-5">
-      <h4>Lançar nota fiscal</h4>
+      <h4>Lançar controle financeiro</h4>
       <form enctype="multipart/form-data" action="./lancar-controle-financeiro.php" method="post" class="col">
         <div class="row g-3">
           <div class="form-floating col-lg-6">
