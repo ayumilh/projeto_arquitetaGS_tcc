@@ -54,7 +54,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
           </ul>
           <hr />
           <div class="exit">
-            <a href="#" class="d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modalExit">
               <img src="../../img/client/exit.png" alt="exit" width="32" height="32">
             </a>
           </div>
@@ -77,15 +77,6 @@ if(!isset($_SESSION['pin_projeto']) == true){
               </a>
             </header>
 
-            <!-- <div class="section justify-content-between align-content-between">
-              <div class="group-btn justify-content-between align-content-between" role="group" aria-label="Basic checkbox toggle button group">
-                          
-                <button type="button" class="btn btn-primary btn-frame">Cronograma da obra</button>
-                <button type="button" class="btn btn-primary btn-frame">Central de mensagem (13)</button>
-                <button type="button" class="btn btn-primary btn-frame">Arquivos</button>
-                
-              </div>
-            </div> -->
             <!-- orçamentos -->
             <div class="list-budgets">
               <div class="row">
@@ -189,7 +180,12 @@ if(!isset($_SESSION['pin_projeto']) == true){
                         $data_publicacao = $row['data_publicacao'];
                       }
                     } else{
-                      echo "Os dados nao foram encontrados";
+                      $cod_notaFiscal  = '';
+                      $pin_projeto     = 'pin_projeto'; 
+                      $nome_arquivo    = 'Sem arquivo';
+                      $caminho_arquivo = 'Arquivo não encontrado';
+                      $obs_arquivo     = '...';
+                      $data_publicacao = '00-00-0000';
                     }
                   ?>
                   <div class="modal-dialog">
@@ -253,7 +249,6 @@ if(!isset($_SESSION['pin_projeto']) == true){
                     </div>
                   </div>
                 </div>
-
 
                 <!-- modal: controle financeiro -->
                 <div class="modal fade modal-lg" id="modalCtlFinanceiro" data-bs-backdrop="static"
@@ -337,13 +332,18 @@ if(!isset($_SESSION['pin_projeto']) == true){
                     while($row = $query_row->fetch_assoc()){
                       $cod_arquivo     = $row['cod_arquivo'];
                       $pin_projeto     = $row['pin_projeto']; 
-                      $nome_arquivo    = $row['nome_arquivo'];
-                      $caminho_arquivo = $row['caminho_arquivo'];
-                      $obs_arquivo     = $row['observacao'];
-                      $data_publicacao = $row['data_publicacao'];
+                      $nome_arquivo    = $row['nome_arquivo']??"Sem nome";
+                      $caminho_arquivo = $row['caminho_arquivo']??"Não definido";
+                      $obs_arquivo     = $row['observacao']??" ";
+                      $data_publicacao = $row['data_publicacao']??"00-00-0000";
                     }
-                  } else{
-                    echo "Os dados nao foram encontrados";
+                  }else{
+                    $cod_notaFiscal  = '';
+                    $pin_projeto     = 'pin_projeto'; 
+                    $nome_arquivo    = 'Sem arquivo';
+                    $caminho_arquivo = 'Arquivo não encontrado';
+                    $obs_arquivo     = '...';
+                    $data_publicacao = '00-00-0000';
                   }
                   ?>
                   <div class="modal-dialog">
@@ -400,6 +400,26 @@ if(!isset($_SESSION['pin_projeto']) == true){
                             </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- modal: exit -->
+                <div class="modal fade modal-lg" id="modalExit" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalExit" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title text-white" id="modalExitLabel">Sair</h1>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body mt-3 me-5">
+                        <h3>Você tem certeza que quer sair?</h3>
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary btn-enviar"
+                          data-bs-dismiss="modal">Sair <img src="../../img/client/exit.png" alt="icon de sair"></button>
                       </div>
                     </div>
                   </div>
