@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Lançar nota fiscal</title>
+  <title>Lançar controle financeiro</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,9 +16,13 @@
 <body>
   <div class="container">
     <main class="row g-5">
-      <h4>Lançar nota fiscal</h4>
+      <h4>Lançar controle financeiro</h4>
       <form enctype="multipart/form-data" action="./lancar-controle-financeiro.php" method="post" class="col">
         <div class="row g-3">
+          <div class="form-floating col-lg-6">
+            <input type="text" class="form-control" name="pin_projeto" placeholder="Pin do projeto">
+            <label for="pin_projeto">Pin do projeto</label>
+          </div>
           <div class="form-floating col-lg-6">
             <select class="form-select" name="selecao_servico">
               <option selected></option>
@@ -69,7 +73,7 @@
           </div>
         </div>
         <hr class="my-4">
-          <button class="w-100 btn btn-primary btn-lg" type="submit" value="send_nota">send</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit" name="enviar_admin">Enviar</button>
       </form>
     </main>
   </div>

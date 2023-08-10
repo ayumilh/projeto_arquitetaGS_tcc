@@ -112,12 +112,23 @@ header span{
     font-size: 1rem;
 }
 
-/* modal: cotrole financeiro */
+/* modal: controle financeiro */  
 .modal-header{
     background-color: var(--secondary-color);
 }
 .modal-body{
     font-size: 1.2rem;
+}
+.list-group--financeiro {
+    width: 400px;
+    max-width: 460px;
+    margin: 4rem auto;
+}
+.list-group--financeiro  .list-group-item {
+cursor: pointer;
+}
+.list-historico{
+    display: none;
 }
 
 .info{
