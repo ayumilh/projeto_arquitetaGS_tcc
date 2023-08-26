@@ -16,7 +16,7 @@
     $caminho     = $_FILES['anexo_servico']['name'];
     $anexo       = $uploadDir . basename($caminho);
     $servico     = $_POST['selecao_servico'];
-    $status      = $_POST['status'];
+    $status      = $_POST['listGroupCheckableRadios'];
     $valor       = $_POST['valor_servico'];
     $data        = $_POST['data_servico'];
     
@@ -25,11 +25,11 @@
       $query;
       if(isset($_POST['enviar_admin'])){
         $pin_projeto  = $_POST['pin_projeto'];
-        $query = "INSERT INTO controlefinanceiro(cod_financeiro, pin_projeto, id_servico, status, data, valor, anexo) VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
+        $query = "INSERT INTO controlefinanceiro VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
 
       }elseif(isset($_POST['enviar_cliente'])){
         $pin_projeto = $_POST['pin_projeto_cli'];
-        $query = "INSERT INTO controlefinanceiro(cod_financeiro, pin_projeto, id_servico, status, data, valor, anexo) VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
+        $query = "INSERT INTO controlefinanceiro VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
         header("location: ../client/cliente_home.php");
       }
 
