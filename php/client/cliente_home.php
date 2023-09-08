@@ -82,7 +82,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
             <div class="list-budgets">
               <div class="row">
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/empreiteira.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/empreiteira.php';">
                     <div class="card-header"><img src="../../img/client/emprenteira.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
@@ -94,7 +94,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div>
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/iluminacao.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/iluminacao.php';">
                     <div class="card-header"><img src="../../img/client/iluminacao.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
@@ -106,7 +106,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div> <!-- col -->
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/vidracaria.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/vidracaria.php';">
                     <div class="card-header"><img src="../../img/client/vidracaria.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
@@ -118,7 +118,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div>
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marcenaria.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marcenaria.php';">
                     <div class="card-header"><img src="../../img/client/marcenaria.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
@@ -130,7 +130,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div> <!-- col -->
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/ar_cond.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/ar_cond.php';">
                     <div class="card-header"><img src="../../img/client/ar.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Ar-condicionado</h5>
@@ -141,7 +141,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div>
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marmoraria.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marmoraria.php';">
                     <div class="card-header"><img src="../../img/client/marmoraria.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
@@ -153,7 +153,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div> <!-- col -->
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/revestimento.html';">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/revestimento.php';">
                     <div class="card-header"><img src="../../img/client/revestimento.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
