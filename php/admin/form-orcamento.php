@@ -16,64 +16,50 @@
 <body>
   <div class="container">
     <main class="row g-5">
-      <h4>Lançar controle financeiro</h4>
-      <form enctype="multipart/form-data" action="./lancar-controle-financeiro.php" method="post" class="col">
+      <h4>Lançar orçamentos</h4>
+      <form enctype="multipart/form-data" action="./lancar-orcamento.php" method="post" class="col">
         <div class="row g-3">
           <div class="form-floating col-lg-6">
             <input type="text" class="form-control" name="pin_projeto" placeholder="Pin do projeto">
             <label for="pin_projeto">Pin do projeto</label>
           </div>
+          
           <div class="form-floating col-lg-6">
             <select class="form-select" name="selecao_servico">
               <option selected></option>
               <?php
-              include('../connect.php');
-              $query = "SELECT * FROM servicos";
-              $result = $sql->query($query);
+                include('../connect.php');
+                $query = "SELECT * FROM servicos";
+                $result = $sql->query($query);
 
-              // Gera as opções dinamicamente
-              if($result->num_rows > 0){
-                while($row = $result->fetch_assoc()){
-                  $id_servico = $row["id_servico"];
-                  $servico = $row["servico"];
-                  echo "<option value='$id_servico'>$servico</option>";
+                // Gera as opções dinamicamente
+                if($result->num_rows > 0){
+                  while($row = $result->fetch_assoc()){
+                    $id_servico = $row["id_servico"];
+                    $servico = $row["servico"];
+                    echo "<option value='$id_servico'>$servico</option>";
+                  }
+                }else{
+                  echo "deu errado";
                 }
-              }else{
-                echo "deu errado";
-              }
               ?>
             </select>
             <label for="selecao_servico">Escolha o serviço</label>
           </div>
 
           <div class="form-floating col-lg-6">
-            <input type="date" class="form-control" name="data_servico">
-            <label for="data_servico">Data</label>
-          </div>
-
-          <div class="form-floating col-lg-6">
-            <input type="text" class="form-control" name="valor_servico" placeholder="00.00">
-            <label for="valor_servico">Valor</label>
+            <input type="text" class="form-control" name="nome_empresa">
+            <label for="valor_servico">Nome da empresa:</label>
           </div>
         
           <div class="form-floating col-lg-6">
-            <input type="file" class="form-control" name="anexo_servico">
+            <input type="file" class="form-control" name="anexo">
             <label for="anexo_servico">Anexo</label>
           </div>
         </div>
-        <!-- receita x despesas -->
-        <div class="container">
-          <div class="row mt-5">
-            <div class="col info me-2 p-3 receita">
-              <label><input type="radio" name="status" value="Receita"> <span>Receita</span></label>
-            </div>
-            <div class="col info p-3 despesa">
-              <label><input type="radio" name="status" value="Despesa"> <span>Despesa</span></label>
-            </div>
-          </div>
-        </div>
+
         <hr class="my-4">
-          <button class="w-100 btn btn-primary btn-lg" type="submit" name="enviar_admin">Enviar</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit" name="enviar">Enviar</button>
       </form>
     </main>
   </div>

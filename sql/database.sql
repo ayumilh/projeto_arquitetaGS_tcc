@@ -13,6 +13,18 @@ CREATE TABLE cliente(
     data_fatura VARCHAR(10) NOT NULL
 );
 
+-- Tabela formulario de Orcamento do home
+CREATE TABLE formOrcamento(
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(120) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    tipoProj VARCHAR(5) NOT NULL,
+    M2 varchar(5) NOT NULL,
+    condominio VARCHAR(50),
+    inicioProj VARCHAR(25) NOT NULL,
+    observacao VARCHAR(255)
+);
+
 -- Tabela projeto
 CREATE TABLE projeto(
     pin_projeto VARCHAR(5) PRIMARY KEY,
@@ -60,6 +72,17 @@ CREATE TABLE controleFinanceiro(
     FOREIGN KEY (pin_projeto) REFERENCES projeto(pin_projeto),
     FOREIGN KEY(id_servico) REFERENCES servicos(id_servico)
 );
+
+-- Tabela de Orcamentos
+CREATE TABLE orcamentos(
+    pin_projeto VARCHAR(5) NOT NULL,
+    id_servico SMALLINT,
+    nome_empresa VARCHAR(150),
+    status ENUM('Selecionar', 'Selecionado'),
+    anexo VARCHAR(255),
+    FOREIGN KEY (pin_projeto) REFERENCES projeto(pin_projeto),
+    FOREIGN KEY(id_servico) REFERENCES servicos(id_servico)
+); 
 
 -- Tabela de serviços
 CREATE TABLE servicos(

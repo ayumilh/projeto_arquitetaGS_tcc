@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Lançar Arquivos</title>
+  <title>Lançar controle financeiro</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -16,28 +16,36 @@
     $caminho     = $_FILES['anexo_servico']['name'];
     $anexo       = $uploadDir . basename($caminho);
     $servico     = $_POST['selecao_servico'];
-    $status      = $_POST['status'];
+    $status      = $_POST['listGroupCheckableRadios'];
     $valor       = $_POST['valor_servico'];
     $data        = $_POST['data_servico'];
-
-
+    
+    
     if(move_uploaded_file($_FILES["anexo_servico"]["tmp_name"], $anexo)){
-      // mandar para o banco de dados
-      $query = "INSERT INTO controlefinanceiro(cod_financeiro, pin_projeto, id_servico, status, data, valor, anexo) VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
+      $query;
+      if(isset($_POST['enviar_admin'])){
+        $pin_projeto  = $_POST['pin_projeto'];
+        $query = "INSERT INTO controlefinanceiro VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
+
+      }elseif(isset($_POST['enviar_cliente'])){
+        $pin_projeto = $_POST['pin_projeto_cli'];
+        $query = "INSERT INTO controlefinanceiro VALUE(default, '$pin_projeto', '$servico', '$status', '$data', '$valor', '$anexo')";
+        header("location: ../client/cliente_home.php");
+      }
 
       // verificar se a inserção foi bem sucedida
       if ($sql->query($query) === TRUE) {
         $select_controlefinanceiro = "SELECT * FROM controlefinanceiro";
         $query_controlefinanceiro  = $sql->query($select_controlefinanceiro);
-        // if($query_controlefinanceiro->num_rows > 0){
-
-        //   $_SESSION['id_cliente'] = $id_cliente;
-        //   $_SESSION['status'] = $status;
-        //   $_SESSION['servico'] = $servico;
-        //   $_SESSION['data'] = $data;
-        //   $_SESSION['valor'] = $valor;
-        //   $_SESSION['anexo'] = $anexo;
-        // }
+        if($query_controlefinanceiro->num_rows > 0){
+          // $_SESSION['cod_financeiro'] $cod_financeiro;
+          $_SESSION['pin_projeto'] = $pin_projeto;
+          $_SESSION['id_servico'] = $servico;
+          $_SESSION['status'] = $status;
+          $_SESSION['data'] = $data;
+          $_SESSION['valor'] = $valor;
+          $_SESSION['anexo'] = $anexo;
+        }
         echo "Consulta INSERT executada com sucesso!";
       } else {
         echo "Erro ao executar a consulta: " . $sql->error;
