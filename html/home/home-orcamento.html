@@ -85,31 +85,32 @@
     </div>
 
     <center>
-      <form class="container" id="formulario">
+      <form class="container" id="formulario" action="../../php/home/orcamento.php" method="post">
         <br>
         <h3 id="texto">Faça seu orçamento conosco!</h3>
         <br>
         <div class="container">
           <label for="text" class="form-label">Nome Completo</label>
-          <input type="text" class="form-control" id="Nome">
+          <input type="text" name="nome_orc" class="form-control" id="Nome">
         </div>
         </div>
         <div class="container">
           <label for="text" class="form-label">Email</label>
-          <input type="text" class="form-control" id="email">
+          <input type="text" name="email_orc" class="form-control" id="email">
         </div>
         <div class="container">
           <label for="text" class="form-label">Número de telefone</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="11 999981475">
+          <input type="text" name="tel_orc" class="form-control" id="inputAddress" placeholder="11 999981475">
         </div>
         <div class="container">
           <label for="text" class="form-label">Qual o seu projeto?</label>
           <div class="container">
             <div class="form-floating">
-              <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+              <select class="form-select" name="tipo_orc" id="floatingSelectGrid" aria-label="Floating label select example">
                 <option selected>...</option>
-                <option value="1">Casa</option>
-                <option value="2">Apartamento</option>
+                <option value="casa">Casa</option>
+                <option value="apto">Apartamento</option>
+                <option value="outro">outro</option>
               </select>
               <label for="floatingSelectGrid">Tipo de Obras</label>
               <br>
@@ -117,43 +118,38 @@
           </div>
           <div class="container">
             <div class="form-floating">
-              <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                <option selected>...</option>
-                <option value="1">50</option>
-                <option value="2">100</option>
-                <option value="3">150</option>
-              </select>
-              <label for="floatingSelectGrid">Em metros quadrados (m2)</label>
+              <input type="text" class="form-control" name="m2_orc" placeholder="m2">
+              <label for="projeto_m2">M2</label>
             </div>
           </div>
         </div>
         <br>
         <div class="container">
           <label for="text" class="form-label">Se for em Condominio, qual é o Condominio?</label>
-          <input type="text" class="form-control" id="condominio" placeholder="Condominio Rosa Clara">
+          <input type="text" name="condominio_orc" class="form-control" id="condominio" placeholder="Condominio Rosa Clara">
         </div>
         <br>
         <h1 id="Obra">Em quanto tempo você precisa iniciar o projeto?</h1>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <input class="form-check-input" type="radio" name="iniProj_orc" id="exampleRadios1" value="em breve" checked>
           <label class="form-check-label" for="exampleRadios1">
             Em breve
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <input class="form-check-input" type="radio" name="iniProj_orc" id="exampleRadios2" value="entregar já">
           <label class="form-check-label" for="exampleRadios2">
             Assim que for entregue
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+          <input class="form-check-input" type="radio" name="iniProj_orc" id="exampleRadios3" value="me programar">
           <label class="form-check-label" for="exampleRadios3">
             Gostaria de me programar
           </label>
         </div>
         <br>
-        <label>Mensagem:</label><br><textarea class="msg"></textarea><br>
+        <label>Mensagem:</label><br><textarea name="obs_orc" class="msg"></textarea><br>
         </div>
         <br>
         <div class="mb-3">
