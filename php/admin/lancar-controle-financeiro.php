@@ -17,6 +17,7 @@
     $anexo       = $uploadDir . basename($caminho);
     $servico     = $_POST['selecao_servico'];
     $status      = $_POST['listGroupCheckableRadios'];
+    $status      = $_POST['listGroupCheckableRadios'];
     $valor       = $_POST['valor_servico'];
     $data        = $_POST['data_servico'];
     

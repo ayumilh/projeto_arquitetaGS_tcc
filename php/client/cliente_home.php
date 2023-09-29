@@ -16,6 +16,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../../css/client/cliente-home.css"/>
 </head>
@@ -285,14 +286,9 @@ if(!isset($_SESSION['pin_projeto']) == true){
                       </div>
 
                       <div class="modal-body mt-3 me-5">
-                        <div class="row align-items-start">
-                          <button type="button" class="btn w-auto mb-1" id="hidden-historico">Historico</button>
-                        </div>
-
                         <form action="../../php/admin/lancar-controle-financeiro.php" enctype="multipart/form-data" method="post">
                           <div class="row g-3">
-
-                            <input type="hidden" name="pin_projeto_cli" value="<?=$pin_projeto?>" required/>
+                          <input type="hidden" name="pin_projeto_cli" value="<?=$pin_projeto?>"/>
                             <div class="form-floating col-lg-6">
                               <select class="form-select" name="selecao_servico">
                                 <option selected></option>
