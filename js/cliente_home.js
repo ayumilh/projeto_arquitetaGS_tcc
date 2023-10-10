@@ -1,33 +1,36 @@
-// se ao fechar o modal o usuario nao ter enviado o formulario, deixa uma caixa de aviso para ele terminar de cadastrar
-document.addEventListener('DOMContentLoaded', function() {
-  const meuForm = document.getElementById('meuForm');
+// Função para verificar o preenchimento dos campos do formulário
+function verificarCampos() {
+  // Obter referências aos campos de entrada
+  const selecaoServico = document.querySelector('select[name="selecao_servico"]');
+  const dataServico = document.querySelector('input[name="data_servico"]');
+  const valorServico = document.querySelector('input[name="valor_servico"]');
+  const anexoServico = document.querySelector('input[name="anexo_servico"]');
+  const radioDespesa = document.querySelector('input[value="Despesa"]');
+  const radioReceita = document.querySelector('input[value="Receita"]');
 
-  meuForm.addEventListener('submit', function(event) {
-    // event.preventDefault(); // Impede o envio padrão do formulário
+  // Verificar se pelo menos um campo está vazio
+  if (
+      selecaoServico.value === "" ||
+      dataServico.value === "" ||
+      valorServico.value === "" ||
+      anexoServico.value === "" ||
+      (!radioDespesa.checked && !radioReceita.checked)
+  ) {
+      // Pelo menos um campo está vazio, mostrar mensagem de erro ou realizar outra ação desejada
+      const aviso = document.querySelector('.avisoCampoVazio');
+      aviso.style.display = "block";
+      return false; // Impedir o envio do formulário
+  }
 
-    // Realiza o envio do formulário
-    fetch(this.action, {
-      method: this.method,
-      body: new FormData(this),
-    })
-    .then(response => {
-      if (response.ok) {
-        // O envio foi bem-sucedido (status HTTP 200)
-        return response.text(); // Se necessário, você pode lidar com a resposta do servidor aqui
-      } else {
-        // O envio falhou (status HTTP diferente de 200)
-        throw new Error('Falha no envio do formulário');
-      }
-    })
-    .then(data => {
-      // Você pode processar a resposta do servidor aqui
-      console.log('Resposta do servidor:', data);
-      alert('Formulário enviado com sucesso!');
-    })
-    .catch(error => {
-      // Trate erros de envio aqui, se necessário
-      console.error('Erro no envio do formulário:', error);
-      alert('Falha no envio do formulário.');
-    });
-  });
+  // Todos os campos estão preenchidos, permitir o envio do formulário
+  return true;
+}
+
+// Adicionar um ouvinte de evento para o envio do formulário
+const formulario = document.querySelector('form');
+formulario.addEventListener('submit', function (event) {
+  if (!verificarCampos()) {
+      event.preventDefault(); // Impedir o envio do formulário se campos estiverem vazios
+  }
 });
+

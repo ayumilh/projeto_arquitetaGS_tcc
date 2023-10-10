@@ -55,7 +55,12 @@ header span{
     width: auto;
     height: 56px;
     border-radius: 15px;
-    /* border-color: var(--secondary-color); */
+}
+
+/* aviso */
+.avisoCampoVazio{
+    display: none;
+    position: absolute;
 }
 
 /* modal: geral */
@@ -170,11 +175,28 @@ cursor: pointer;
     background-color: #008605;
 }
 
+@media (max-width: 769px) {
+    /* aviso */
+    .avisoCampoVazio{
+        display: block;
+        width: 600px;
+        left: auto;
+    }
+}
 @media (max-width: 636px) {
     .card-text{
         font-size: 0.9rem;
     }
 
+    /* aviso */
+    .avisoCampoVazio{ 
+        display: block;
+        width: 450px;
+        left: auto;
+    }
+    .avisoCampoVazio-h1 {
+        font-size: 1.2rem;
+    }
     /* modal: geral */
     .modal h1{
         font-size: 1.6rem;

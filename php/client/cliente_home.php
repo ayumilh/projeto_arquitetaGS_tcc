@@ -17,8 +17,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../../css/client/cliente-home.css"/>
+    <link rel="stylesheet" href="../../css/client/cliente-home.css"/>
+    <script src="../../js/cliente_home.js"></script>
 </head>
 
 <body>
@@ -79,6 +79,20 @@ if(!isset($_SESSION['pin_projeto']) == true){
               </a>
             </header>
 
+            <div class="avisoCampoVazio modal modal-sheet" tabindex="-1" role="dialog" id="modalSheet">
+              <div class="modal-dialog bg-body" role="document">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header border-bottom-0 bg-body">
+                    <h1 class="modal-title avisoCampoVazio-h1">Preencha todas as informações !</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body py-0">
+                    <p>Volte e complete o formulario preenchendo todos os campos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <!-- orçamentos -->
             <div class="list-budgets">
               <div class="row">
@@ -240,40 +254,6 @@ if(!isset($_SESSION['pin_projeto']) == true){
                   </div>
                 </div>
 
-                <?php
-                  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    // Verificar se os campos estão vazios
-                    $selecao_servico = $_POST["selecao_servico"];
-                    $data_servico = $_POST["data_servico"];
-                    $valor_servico = $_POST["valor_servico"];
-                    $anexo_servico = $_POST["anexo_servico"];
-
-                    if (empty($selecao_servico) || empty($data_servico) || empty($valor_servico) || empty($anexo_servico)) {
-                      // Pelo menos um campo está vazio, exibir o modal de aviso
-                      echo '<script>
-                              $(document).ready(function() {
-                                $("#modalAviso").modal("show");
-                              });
-                            </script>';
-                    }
-                  }
-                ?>
-                <div class="modal fade" id="modalAviso" tabindex="-1" aria-labelledby="modalAvisoLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="modalAvisoLabel">Aviso</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        Preencha todos os campos do formulário antes de enviar.
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <!-- modal: controle financeiro -->
                 <div class="modal fade modal-lg" id="modalCtlFinanceiro" data-bs-backdrop="static"
                   data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalArquivos" aria-hidden="true">
@@ -344,13 +324,11 @@ if(!isset($_SESSION['pin_projeto']) == true){
                               <!-- <button type="submit" name="receita_servico" class="col info p-1 receita">Receita</button>
   
                               <button type="submit" name="despesa_servico" class="col info despesa">Despesa</button> -->
-                              
-                              
                           </div>
 
                           <div class="modal-footer row">
                             <button type="submit" class="btn btn-secondary btn-enviar"
-                            data-bs-dismiss="modal" name="enviar_cliente">Enviar</button>
+                            data-bs-dismiss="modal" name="enviar_cliente" onclick="verificarCampos()">Enviar</button>
                             
                           </div>
                         </form>
@@ -441,9 +419,6 @@ if(!isset($_SESSION['pin_projeto']) == true){
                     </div>
                   </div>
                 </div>
-
-                <!-- se o form do modal estiver vazio -->
-
 
                 <!-- modal: arquivos -->
                 <div class="modal fade modal-lg" id="modalArquivos" tabindex="-1" aria-hidden="true">
@@ -538,7 +513,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                   </div>
                 </div>
               </div>
-            </div> <!-- main -->
+            </div> <!-- main -->            
           </div>
 
         </div> <!-- row -->
