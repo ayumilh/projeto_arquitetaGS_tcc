@@ -178,7 +178,7 @@ cursor: pointer;
 @media (max-width: 769px) {
     /* aviso */
     .avisoCampoVazio{
-        display: block;
+        display: none;
         width: 600px;
         left: auto;
     }
@@ -190,7 +190,7 @@ cursor: pointer;
 
     /* aviso */
     .avisoCampoVazio{ 
-        display: block;
+        display: none;
         width: 450px;
         left: auto;
     }
@@ -216,6 +216,13 @@ cursor: pointer;
 }
 
 @media (max-width: 576px) {
+    .avisoCampoVazio{
+        max-width: 380px;
+    }
+    .avisoCampoVazio h1.modal-title, .avisoCampoVazio div.modal-body{
+        font-size: 1.2rem;
+    }
+
     .list-budgets .row{
         margin-left: 10px;
     }
