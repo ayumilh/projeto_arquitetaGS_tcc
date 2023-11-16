@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="../../css/home/home-navbar.css">
   <link rel="stylesheet" href="../../css/home/home-entrar.css">
 
-
+  <script src="../../js/home-entrar.js"></script>
 </head>
 
 <body class="text-center">
@@ -86,17 +86,17 @@
       <h4 class="pin-title">Insira o pin do projeto</h4>
 
       <div class="group-pin">
-        <input type="text" class="inp-pin" maxlength="1" case name="pin-0">
-        <input type="text" class="inp-pin" maxlength="1" case name="pin-1">
-        <input type="text" class="inp-pin" maxlength="1" case name="pin-2">
-        <input type="text" class="inp-pin" maxlength="1" case name="pin-3">
-        <input type="text" class="inp-pin" maxlength="1" case name="pin-4">
+        <input type="text" onkeyup="pularParaProximo(event, 'pin-0')" id="pin-0" class="inp-pin" maxlength="1" case name="pin-0">
+        <input type="text" onkeyup="pularParaProximo(event, 'pin-1')" id="pin-1" class="inp-pin" maxlength="1" case name="pin-1">
+        <input type="text" onkeyup="pularParaProximo(event, 'pin-2')" id="pin-2" class="inp-pin" maxlength="1" case name="pin-2">
+        <input type="text" onkeyup="pularParaProximo(event, 'pin-3')" id="pin-3" class="inp-pin" maxlength="1" case name="pin-3">
+        <input type="text" onkeyup="pularParaProximo(event, 'pin-4')" id="pin-4" class="inp-pin" maxlength="1" case name="pin-4">
       </div>
 
       <a href="#" class="pin-reenviar">Não recebi</a>
 
       <div class="form-footer-pin">
-        <button class="btn btn-primary btn-lg w-50 btn-pin" type="submit" name="verificar">Entrar</button>
+        <button class="btn btn-primary btn-lg w-50 btn-pin" type="submit" name="verificar" id="pin-button">Entrar</button>
       </div>
 
     </form>
