@@ -27,10 +27,19 @@ function verificarCampos() {
 }
 
 // Adicionar um ouvinte de evento para o envio do formulário
-const formulario = document.getElementById('formControleFinanceiro');
-formulario.addEventListener('submit', function (event) {
-  if (!verificarCampos()) {
-      event.preventDefault(); // Impedir o envio do formulário se campos estiverem vazios
-  }
-});
+window.addEventListener("DOMContentLoaded", (event) => {
+  const formulario = document.getElementById('formControleFinanceiro');
+  formulario.addEventListener('submit', function (event) {
+    if (!verificarCampos()) {
+      event.preventDefault();
+    }
+  })
 
+  // button de fechar o modal de aviso
+  const buttonAviso = document.querySelector('#avisoModalClose');
+  const modalAviso  = document.querySelector('.avisoCampoVazio');
+
+  buttonAviso.addEventListener('click', function(){
+    modalAviso.style.display = "none"
+  })
+})
