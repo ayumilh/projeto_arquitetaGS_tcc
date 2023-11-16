@@ -217,14 +217,21 @@ cursor: pointer;
 
 @media (max-width: 576px) {
     .avisoCampoVazio{
-        max-width: 380px;
+        max-width: 70%;
     }
     .avisoCampoVazio h1.modal-title, .avisoCampoVazio div.modal-body{
         font-size: 1.2rem;
     }
 
+    .receitaDespesa{
+        margin-left: 0px;
+    }
     .list-budgets .row{
-        margin-left: 10px;
+        margin-left: 0px;
+        justify-items: center;
+    }
+    .receita{
+        margin-right: 0px;
     }
     .col-sm-6{
         width: 100% !important;
