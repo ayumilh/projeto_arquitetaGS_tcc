@@ -27,7 +27,7 @@ function verificarCampos() {
 }
 
 // Adicionar um ouvinte de evento para o envio do formulário
-const formulario = document.querySelector('form');
+const formulario = document.getElementById('formControleFinanceiro');
 formulario.addEventListener('submit', function (event) {
   if (!verificarCampos()) {
       event.preventDefault(); // Impedir o envio do formulário se campos estiverem vazios

@@ -1,0 +1,328 @@
+@font-face {
+  font-family: Big_John;
+  src: url('../projeto_arquitetaGS_tcc-Sobre/fonts/Big_John_PRO/bigjohnpro-bold.otf')
+}
+@font-face {
+  font-family: Big_John_light;
+  src: url('../projeto_arquitetaGS_tcc-Sobre/fonts/Big_John_PRO/bigjohnpro-regular.otf')
+}
+
+/* @font-face {
+  font-family: Montserrat;
+  src: url('/fonts/fontmontserrat/Montserrat-Medium.otf') ;
+} */
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR */
+.a-logo {
+  margin-left: 70px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #112137;
+
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list a {
+  color: #CE9184;
+}
+
+.logo {
+  height: 62px;
+  width: 62px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu li a:hover {
+  color: #fff;
+  transition: 0.3 ease;
+  text-decoration: underline #CE9184;
+}
+
+.menu li {
+  padding: 5px 34px;
+}
+
+/* texto */
+.text-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.titulo {
+  font-family: 'Big_John_light';
+  font-size: 4vh;
+  color: #112137;
+  background-color: #CB8B7D;
+  box-shadow: -7px 8px 0px rgba(17.00000088661909, 33.00000183284283, 55.00000052154064, 1);
+  background-color: rgba(203.00000309944153, 139.0000069141388, 125.00000014901161, 1);
+  width: 203px;
+  height: 46px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.text-home {
+  margin: 0% 50%;
+}
+
+.text-sobre {
+  color: #112137;
+  font-size: 3vh;
+  /* font-family: 'Big_John'; */
+  margin-top: -580px;
+}
+
+/* card e foto*/
+
+.imagem {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column-reverse;
+}
+
+.imagem_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: fit-content;
+  justify-content: end;
+}
+
+
+.imagem_ponto {
+  position: relative;
+  right: 0;
+  max-width: 100%;
+  margin: 60px 20% 0px 0px;
+}
+
+.imagem_cartao {
+  position: absolute;
+  left: -90%;
+  top: 200px;
+  background: #EBEFEE;
+  padding: 20px 40px;
+  box-shadow: 6px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cartao-title,
+.cartao-subtitle {
+  color: #CB8B7D;
+  font-size: clamp(.5rem, -0.875rem + 8.333333vw, 4.5rem);
+  font-family: 'Big_John';
+  font-weight: bold;
+  text-align: end;
+}
+
+body {
+  background-color: #EBEFEE;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-img {
+  display: flex;
+  position: relative;
+}
+
+/* MENU RESPONSIVO */
+/* CHECKBOX */
+input[type=checkbox] {
+  display: none;
+}
+
+/* hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 778px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #fff;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1300px) {
+  .text-home {
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+  }
+
+  .text-sobre {
+    position: relative;
+    display: flex;
+    left: -1px;
+  }
+
+  .imagem_cartao {
+    position: absolute;
+    left: -30%;
+    top: 300px;
+    padding: 20px 40px;
+  }
+
+  .imagem_ponto {
+    position: relative;
+    right: 0;
+    max-width: 80%;
+    margin: 50px;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .text-home {
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+  }
+
+  .text-sobre {
+    display: flex;
+    position: relative;
+    left: -180%;
+    top: 100px;
+    font-size: 2.5vh;
+  }
+
+  .imagem_cartao {
+    position: absolute;
+    left: -35%;
+    top: 200px;
+    padding: 20px 40px;
+  }
+
+  .imagem_ponto {
+    position: relative;
+    right: 0;
+    max-width: 70%;
+    margin: 50px;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .text-home {
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    margin-top: 60%
+  }
+
+  .text-sobre {
+    display: flex;
+    left: -120px;
+  
+  }
+
+  .imagem_cartao {
+    position: absolute;
+    left: 6%;
+    top: 100px;
+    padding: 20px 40px;
+  }
+
+  .imagem_ponto {
+    position: relative;
+    right: 0;
+    max-width: 100%;
+    margin: 50px;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 475px) {
+
+  .text-home {
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    margin-top: 60%
+  }
+
+  .text-sobre {
+    display: flex;
+    left: 0px;
+    top: 320px;
+  
+  }
+
+  .imagem_cartao {
+    position: absolute;
+    left: 10%;
+    top: 50px;
+    padding: 20px 40px;
+  }
+
+  .imagem_ponto {
+    position: relative;
+    left: 60px;
+    max-width: 90%;
+    margin: 50px;
+    margin-top: 30%;
+  }
+
+  
+}

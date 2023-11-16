@@ -84,7 +84,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 <div class="modal-content rounded-4 shadow">
                   <div class="modal-header border-bottom-0 bg-body">
                     <h1 class="modal-title avisoCampoVazio-h1">Preencha todas as informações !</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body py-0">
                     <p>Volte e complete o formulario preenchendo todos os campos.</p>
@@ -266,7 +266,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                       </div>
 
                       <div class="modal-body mt-3 me-5">
-                        <form action="../../php/admin/lancar-controle-financeiro.php" enctype="multipart/form-data" method="post">
+                        <form id="formControleFinanceiro" action="../../php/admin/lancar-controle-financeiro.php" enctype="multipart/form-data" method="post">
                           <div class="row g-3">
                           <input type="hidden" name="pin_projeto_cli" value="<?=$pin_projeto?>"/>
                             <div class="form-floating col-lg-6">
@@ -498,16 +498,35 @@ if(!isset($_SESSION['pin_projeto']) == true){
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title text-white" id="modalExitLabel">Sair</h1>
+                        <h1 class="modal-title text-white" id="modalExitLabel"></h1>
                         <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
                           aria-label="Close"></button>
                       </div>
-                      <div class="modal-body mt-3 me-5">
+                      <div class="modal-body mt-3 me-5 text-center">
                         <h3>Você tem certeza que quer sair?</h3>
                       </div>
                       <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-enviar"
-                          data-bs-dismiss="modal">Sair <img src="../../img/client/exit.png" alt="icon de sair"></button>
+                      <button id="btnSair" type="button" class="btn btn-secondary btn-enviar " data-bs-dismiss="modal">
+                        Sair 
+                        <!-- <img src="../../img/client/exit.png" alt="icon de sair"> -->
+                      </button>
+
+                      <!-- Script de sair -->
+                      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                      <script>
+                        $(document).ready(function(){
+                          $('#btnSair').click(function(){
+                            // chamando a função de sair
+                            $.ajax({
+                              type:'POST',
+                              url: 'encerrar_sessao.php',
+                              success: function(response){
+                                window.location.href = '../../html/home/home-entrar.html';
+                              }
+                            })
+                          })
+                        })
+                      </script>
                       </div>
                     </div>
                   </div>

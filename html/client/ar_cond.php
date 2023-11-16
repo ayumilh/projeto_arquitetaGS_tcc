@@ -73,26 +73,26 @@ if(!isset($_SESSION['pin_projeto']) == true){
                       </div>';
                   }
                 }else{
-                  $pin_projeto  = null;
-                  $id_servico   = null;
-                  $nome_empresa = null;
-                  $status       = null;
-                  $anexo        = null;
-                  echo '
-                    <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                      <img src="../../img/client/orcamento.png" alt="twbs" width="36" height="36" class="flex-shrink-0 mt-2 img-orcamento">
-                      <div class="d-flex gap-2 w-100 justify-content-between">
-                        <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            ' .$id_servico. '
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a href="' .$row['anexo']. '">Visualizar</a></li>
-                          </ul>
-                        </div>
-                        <button type="button" class="btn-selecao indeterminado" id="btnOrcamento3">Selecionar</button>
-                      </div>
-                    </div>';
+                  $pin_projeto  = '';
+                  $id_servico   = '';
+                  $nome_empresa = '';
+                  $status       = '';
+                  $anexo        = '';
+                  // echo '
+                  //   <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
+                  //     <img src="../../img/client/orcamento.png" alt="twbs" width="36" height="36" class="flex-shrink-0 mt-2 img-orcamento">
+                  //     <div class="d-flex gap-2 w-100 justify-content-between">
+                  //       <div class="dropdown">
+                  //         <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  //           ' .$id_servico. '
+                  //         </button>
+                  //         <ul class="dropdown-menu">
+                  //           <li><a href="' .$row['anexo']. '">Visualizar</a></li>
+                  //         </ul>
+                  //       </div>
+                  //       <button type="button" class="btn-selecao indeterminado" id="btnOrcamento3">Selecionar</button>
+                  //     </div>
+                  //   </div>';
                 }
 
               ?>
