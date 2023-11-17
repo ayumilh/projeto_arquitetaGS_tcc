@@ -240,6 +240,13 @@ cursor: pointer;
         font-size: 1rem;
     }
 
+    /* arquivo */
+    div#arquivoInfo{
+        flex-direction: column;
+    }
+    .text-nowrap{
+        white-space: wrap!important;
+    }
     .exit{
         top: 20px;
     }
