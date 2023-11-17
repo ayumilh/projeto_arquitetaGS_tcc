@@ -226,6 +226,12 @@ cursor: pointer;
     .receitaDespesa{
         margin-left: 0px;
     }
+
+    .list-group--financeiro {
+        width: 350px;
+        max-width: 460px;
+        margin: 4rem auto;
+    }
     .list-budgets .row{
         margin-left: 0px;
         justify-items: center;
