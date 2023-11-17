@@ -110,7 +110,7 @@ header span{
 #modalNotaFiscal small{
     font-size: 0.8rem;
 }
-.modal-notas--info h6{
+.modal-notas--info p.nomeArquivo{
     font-size: 1.2rem;
 }
 .modal-notas--info p{
