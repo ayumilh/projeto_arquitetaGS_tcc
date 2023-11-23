@@ -25,7 +25,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
   <div class="container container-sm">
     <header class="mb-lg-5 text-center">
       <nav class="navbar">
-        <a href="../../index.html"><img src="../../img/voltar.png" class="btn-voltar"></a>
+        <a href="../../php/client/cliente_home.php"><img src="../../img/voltar.png" class="btn-voltar"></a>
         <div class="title">
           <h1>Orçamentos</h1>
         </div>
@@ -36,17 +36,13 @@ if(!isset($_SESSION['pin_projeto']) == true){
       <div class="container">
         <div class="row">
           <div class="col-xl-6">
-            
+
             <div class="list-group w-auto h-auto">
-              <h3>Ar-condicionado</h3>
-              <!-- fazer a verificação aqui: SELECT * FROM orcamentos WHERE pin_projeto = '$pin_projeto' AND id_servico = 5 -->
-                <!-- if true: mostrar dados -->
-  
-                <!-- else: list-group ser uma imagem de nao encontrado -->
-              
+              <h3>Iluminação</h3>
+
               <?php
                 include('../../php/connect.php');
-                $select_table = "SELECT * FROM orcamentos WHERE pin_projeto = '$pin_projeto' AND id_servico = 5";
+                $select_table = "SELECT * FROM orcamentos WHERE pin_projeto = '$pin_projeto' AND id_servico = 2";
                 $query_row = $sql->query($select_table);
 
                 if($query_row->num_rows > 0){
@@ -83,11 +79,9 @@ if(!isset($_SESSION['pin_projeto']) == true){
                   //     <img src="../../img/client/orcamento.png" alt="twbs" class="flex-shrink-0 mt-2 img-orcamento">
                   //     <div class="d-flex w-100 justify-content-between">
                   //       <div class="dropdown">
-                  //         <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  //           ' .$id_servico. '
-                  //         </button>
+                  //         <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
                   //         <ul class="dropdown-menu">
-                  //           <li><a href="' .$row['anexo']. '">Visualizar</a></li>
+                  //           <li><a href="#">Visualizar</a></li>
                   //         </ul>
                   //       </div>
                   //       <button type="button" class="btn-selecao indeterminado" id="btnOrcamento3">Selecionar</button>

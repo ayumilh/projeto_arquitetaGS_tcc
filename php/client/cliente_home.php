@@ -1,8 +1,11 @@
 <?php
 session_start();
 if(!isset($_SESSION['pin_projeto']) == true){
-  header('location: html/home/home-entrar.html');
+  header('location: ../../html/home/home-entrar.html');
 }
+
+$id_cliente = $_SESSION['id_cliente'];
+$pin_projeto = $_SESSION['pin_projeto'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +19,9 @@ if(!isset($_SESSION['pin_projeto']) == true){
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="php/client/style.css">
-    <link rel="stylesheet" href="css/client/cliente-home.css"/>
-    <script src="js/cliente_home.js"></script>
+    <link rel="stylesheet" href="../../css/client/cliente-home.css">
+    <link rel="stylesheet" href="../../css/client/controleFinanceiro.css"/>
+    <script src="../../js/cliente_home.js"></script>
 </head>
 
 <body>
@@ -26,38 +29,38 @@ if(!isset($_SESSION['pin_projeto']) == true){
     <div class="row">
       <nav class="col-2">
         <div class="d-flex flex-column sidebar align-items-center">
-          <a href="index.html" class="d-block align-items-center sidebar-logo">
-            <img src="img/home/logotipo.png" alt="logotipo" width="62" height="62"/>
+          <a href="../../index.html" class="d-block align-items-center sidebar-logo">
+            <img src="../../img/home/logotipo.png" alt="logotipo" width="62" height="62"/>
           </a>
           <hr/>
 
           <ul class="nav nav-pills flex-column mb-auto text-center list-icon">
             <li class="sidebar-icons">
               <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalNotaFiscal">
-                <img src="img/client/nota-fiscal.png" alt="icone-nota-fiscal" class="bi" width="28" height="28" />
+                <img src="../../img/client/nota-fiscal.png" alt="icone-nota-fiscal" class="bi" width="28" height="28" />
               </a>
             </li>
 
             <li class="sidebar-icons">
               <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalCtlFinanceiro">
-                <img src="img/client/financia.png" alt="icone-financia" class="bi" width="28" height="28" />
+                <img src="../../img/client/financia.png" alt="icone-financia" class="bi" width="28" height="28" />
               </a>
             </li>
             <li class="sidebar-icons">
               <a href="#" class="nav-link">
-                <img src="img/client/cronograma.png" alt="icone-cronograma" class="bi" width="28" height="28" />
+                <img src="../../img/client/cronograma.png" alt="icone-cronograma" class="bi" width="28" height="28" />
               </a>
             </li>
             <li class="sidebar-icons">
               <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalArquivos">
-                <img src="img/client/file.png" alt="icone-file" class="bi" width="28" height="28" />
+                <img src="../../img/client/file.png" alt="icone-file" class="bi" width="28" height="28" />
               </a>
             </li>
           </ul>
           <hr />
           <div class="exit">
             <a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modalExit">
-              <img src="img/client/exit.png" alt="exit" width="32" height="32">
+              <img src="../../img/client/exit.png" alt="exit" width="32" height="32">
             </a>
           </div>
         </div>
@@ -68,13 +71,9 @@ if(!isset($_SESSION['pin_projeto']) == true){
           <div class="col-12">
             <header class="align-items-center p-4 mb-3">
               <a href="/" class="align-items-center text-decoration-none text-black">
-                <img src="img/client/people.png" alt="icone-login" width="24" height="26" class="me-1">
+                <img src="../../img/client/people.png" alt="icone-login" width="24" height="26" class="me-1">
                 <span class="fw-bold">
-                  <?php 
-                    $id_cliente = $_SESSION['id_cliente'];
-                    $pin_projeto = $_SESSION['pin_projeto'];
-                    echo "Olá $id_cliente, projeto: $pin_projeto";
-                  ?>
+                 Olá
                 </span>
               </a>
             </header>
@@ -98,8 +97,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
             <div class="list-budgets">
               <div class="row">
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/empreiteira.html';">
-                    <div class="card-header"><img src="img/client/emprenteira.png" alt="" width="34" height="34">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/empreiteira.php';">
+                    <div class="card-header"><img src="../../img/client/emprenteira.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Emprenteira</h5>
@@ -110,8 +109,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div>
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/iluminacao.html';">
-                    <div class="card-header"><img src="img/client/iluminacao.png" alt="" width="34" height="34">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/iluminacao.php';">
+                    <div class="card-header"><img src="../../img/client/iluminacao.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Iluminação</h5>
@@ -122,8 +121,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div> <!-- col -->
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/vidracaria.html';">
-                    <div class="card-header"><img src="img/client/vidracaria.png" alt="" width="34" height="34">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/vidracaria.php';">
+                    <div class="card-header"><img src="../../img/client/vidracaria.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Vidraçaria</h5>
@@ -134,8 +133,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div>
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/marcenaria.html';">
-                    <div class="card-header"><img src="img/client/marcenaria.png" alt="" width="34" height="34">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marcenaria.php';">
+                    <div class="card-header"><img src="../../img/client/marcenaria.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Marcenaria</h5>
@@ -146,8 +145,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div> <!-- col -->
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/ar_cond.html';">
-                    <div class="card-header"><img src="img/client/ar.png" alt="" width="34" height="34"></div>
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/ar_cond.php';">
+                    <div class="card-header"><img src="../../img/client/ar.png" alt="" width="34" height="34"></div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Ar-condicionado</h5>
                       <p class="card-text text-white">Escolha sua empreiteira de preferencia para o desenvolvimento do
@@ -157,8 +156,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div>
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/marmoraria.html';">
-                    <div class="card-header"><img src="img/client/marmoraria.png" alt="" width="34" height="34">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/marmoraria.php';">
+                    <div class="card-header"><img src="../../img/client/marmoraria.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Marmoraria</h5>
@@ -169,8 +168,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
                 </div> <!-- col -->
 
                 <div class="col-xl-4 col-sm-6">
-                  <div class="card m-2 card-frame" onclick="window.location='html/client/revestimento.html';">
-                    <div class="card-header"><img src="img/client/revestimento.png" alt="" width="34" height="34">
+                  <div class="card m-2 card-frame" onclick="window.location='../../html/client/revestimento.php';">
+                    <div class="card-header"><img src="../../img/client/revestimento.png" alt="" width="34" height="34">
                     </div>
                     <div class="card-body text-primary">
                       <h5 class="card-title text-light">Revestimento</h5>
@@ -231,21 +230,21 @@ if(!isset($_SESSION['pin_projeto']) == true){
                             $obs_arquivo     = '...';
                             $data_publicacao = '00-00-0000';
 
-                            echo '
-                              <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
-                                aria-current="true">
-                                <img src="img/client/pdf.png" alt="twbs" width="30" height="30"
-                                  class="flex-shrink-0 ms-2 mt-2">
-                                <div class="d-flex gap-2 w-100 justify-content-between">
-                                  <div class="modal-notas--info">
-                                    <h6 class="mb-0"><span>' . $nome_arquivo . '</span></h6>
-                                    <p class="mb-0 opacity-75"><span>' . $obs_arquivo . '</span></p>
-                                    <p><a href="' . $caminho_arquivo . '" download class="">Download do PDF</a></p>
-                                  </div>
-                                  <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
-                                    <span>' . $data_publicacao . '</span></small>
-                                </div>
-                              </div>';
+                            // echo '
+                            //   <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            //     aria-current="true">
+                            //     <img src="img/client/pdf.png" alt="twbs" width="30" height="30"
+                            //       class="flex-shrink-0 ms-2 mt-2">
+                            //     <div class="d-flex gap-2 w-100 justify-content-between">
+                            //       <div class="modal-notas--info">
+                            //         <h6 class="mb-0"><span>' . $nome_arquivo . '</span></h6>
+                            //         <p class="mb-0 opacity-75"><span>' . $obs_arquivo . '</span></p>
+                            //         <p><a href="' . $caminho_arquivo . '" download class="">Download do PDF</a></p>
+                            //       </div>
+                            //       <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                            //         <span>' . $data_publicacao . '</span></small>
+                            //     </div>
+                            //   </div>';
                           }
 
                         ?>
@@ -390,27 +389,27 @@ if(!isset($_SESSION['pin_projeto']) == true){
                               $obs_arquivo     = '...';
                               $data_publicacao = '00-00-0000';
 
-                              echo '
-                                <div class="list-group-item list-group-item--financeiro list-group-item-action d-flex gap-3 py-2 mt-2">
-                                  <img src="img/client/planejamento-financeiro.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
-                                  <div class="d-flex gap-2 flex-grow-1 justify-content-between">
-                                    <div class="modal-financeiro--info">
-                                      <h6 class="mb-0"><span>' . $id_cliente . '</span></h6>
-                                      <p class="mb-0 opacity-75"><span>' . $valor . '</span></p>
-                                      <p><a href="' . $anexo . '" download class=""></a></p>
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                      <small class="text-nowrap small-status">
-                                        <label for="">Status:</label>
-                                        <span>' . $status . '</span>
-                                      </small>
-                                      <small class="opacity-75 text-nowrap mb-0">
-                                        <label for="">Data da publicação:</label>
-                                        <span>' . $data_publicacao . '</span>
-                                      </small>
-                                    </div>
-                                  </div>
-                                </div>';
+                              // echo '
+                              //   <div class="list-group-item list-group-item--financeiro list-group-item-action d-flex gap-3 py-2 mt-2">
+                              //     <img src="img/client/planejamento-financeiro.png" alt="twbs" width="30" height="30" class="flex-shrink-0 ms-2 mt-2">
+                              //     <div class="d-flex gap-2 flex-grow-1 justify-content-between">
+                              //       <div class="modal-financeiro--info">
+                              //         <h6 class="mb-0"><span>' . $id_cliente . '</span></h6>
+                              //         <p class="mb-0 opacity-75"><span>' . $valor . '</span></p>
+                              //         <p><a href="' . $anexo . '" download class=""></a></p>
+                              //       </div>
+                              //       <div class="d-flex flex-column">
+                              //         <small class="text-nowrap small-status">
+                              //           <label for="">Status:</label>
+                              //           <span>' . $status . '</span>
+                              //         </small>
+                              //         <small class="opacity-75 text-nowrap mb-0">
+                              //           <label for="">Data da publicação:</label>
+                              //           <span>' . $data_publicacao . '</span>
+                              //         </small>
+                              //       </div>
+                              //     </div>
+                              //   </div>';
                             }
                           ?>
                           
@@ -470,21 +469,21 @@ if(!isset($_SESSION['pin_projeto']) == true){
                             $obs_arquivo     = '...';
                             $data_publicacao = '00-00-0000';
 
-                            echo '
-                              <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
-                                aria-current="true">
-                                <img src="img/client/pdf.png" alt="twbs" width="30" height="30"
-                                  class="flex-shrink-0 ms-2 mt-2">
-                                <div class="d-flex gap-2 w-100 justify-content-between">
-                                  <div class="modal-notas--info">
-                                    <h6 class="mb-0"><span>' . $nome_arquivo . '</span></h6>
-                                    <p class="mb-0 opacity-75"><span>' . $obs_arquivo . '</span></p>
-                                    <p><a href="' . $caminho_arquivo . '" download class="">Download do PDF</a></p>
-                                  </div>
-                                  <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
-                                    <span>' . $data_publicacao . '</span></small>
-                                </div>
-                              </div>';
+                            // echo '
+                            //   <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2"
+                            //     aria-current="true">
+                            //     <img src="img/client/pdf.png" alt="twbs" width="30" height="30"
+                            //       class="flex-shrink-0 ms-2 mt-2">
+                            //     <div class="d-flex gap-2 w-100 justify-content-between">
+                            //       <div class="modal-notas--info">
+                            //         <h6 class="mb-0"><span>' . $nome_arquivo . '</span></h6>
+                            //         <p class="mb-0 opacity-75"><span>' . $obs_arquivo . '</span></p>
+                            //         <p><a href="' . $caminho_arquivo . '" download class="">Download do PDF</a></p>
+                            //       </div>
+                            //       <small class="opacity-50 text-nowrap"><label for="">Data da publicação:</label>
+                            //         <span>' . $data_publicacao . '</span></small>
+                            //     </div>
+                            //   </div>';
                           }
                           ?>
                           
@@ -522,7 +521,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                               type:'POST',
                               url: 'encerrar_sessao.php',
                               success: function(response){
-                                window.location.href = 'html/home/home-entrar.html';
+                                window.location.href = '../../html/home/home-entrar.html';
                               }
                             })
                           })
