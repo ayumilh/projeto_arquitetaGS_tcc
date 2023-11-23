@@ -1,0 +1,352 @@
+@font-face {
+  font-family: 'Big John';
+  src: url(../font/Big_John_PRO/bigjohnpro-regular.otf)
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Big John';
+  
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+/* NAVBAR */
+.a-logo{
+  margin-left: 70px;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #112137;
+
+}
+.nav-list{
+  display: flex;
+}
+.nav-list a{
+  color: #CE9184;
+}
+.logo{
+  height: 62px;
+  width: 62px;
+}
+
+/* MENU */
+.menu{
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  font-weight: 600;
+}
+.menu li a:hover{
+  color: #fff;
+  transition: 0.3 ease;
+  text-decoration: underline #CE9184;
+}
+.menu li{
+  padding: 5px 34px;
+}
+
+/* MENU RESPONSIVO */
+/* CHECKBOX */
+input[type=checkbox]{
+  display: none;
+}
+/* hamburger menu */
+.hamburger{ 
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 778px) {
+  .menu{
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover{
+    display: inline-block;
+    background-color: #fff;
+    transition: 0.3s ease;
+  }
+  .menu li + li{
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+
+  
+}
+
+body{
+
+background-color: #EBEFEE;
+}
+
+section.img
+{
+width: 80%;
+height: 80%;
+background-image: url(../../../img/home/servicos/COZINHA\ NOVA_22\ -\ Foto\ 1.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+margin: auto;
+top: 200px;
+}
+
+.overlay{
+
+position: absolute;
+background-color: black;
+width: 100%;
+height: 100%;
+opacity: 0.8;
+transition: 0.5s;
+margin: auto;
+
+}
+
+
+
+.apresentacao:hover{
+
+
+filter: blur(200px);
+transition-delay: 0.4s;
+}
+
+html, body{
+
+height: 100%;
+}
+
+div{
+
+margin: auto;
+}
+
+.servicos {
+
+      
+        top: 55px;
+         position: relative;
+          text-align: center;
+           color: #112137;
+           padding: 10px;
+            font-size: 3vw;
+             font-family: Big John PRO;
+              font-weight: 400;
+              box-shadow: -3px 8px 0px #112137;
+              background: #CB8B7D;
+              margin-left: 33%;
+              margin-right: 36%;
+}
+               
+
+.apresentacao{
+
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+font-size: 2vw;
+color: #FFF;
+font-family: Big John PRO;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0.60px;
+
+
+
+}
+
+.consultoria{
+
+
+left: 1px;
+top: 140px;
+ position: relative;
+  text-align: center;
+  color: #112137;
+text-align: center;
+font-family: Big John PRO;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.text{
+
+margin-top: 24%;
+margin-left: calc(5em + 0.5vh);
+margin-right: calc(26em + 0.5vh);
+margin-bottom: calc(3em + 6vh);
+font-size: 2vw;
+text-align: center;
+background-color: #CB8B7D;
+border-radius: 100px;
+padding: 1vw;
+color: black ;
+
+}
+.but{
+
+margin-top: 100%;
+margin-left: 30%;
+}
+
+.text:hover{
+
+border: 3px solid ;
+transition: 0.8s;
+}
+
+
+
+
+@media (max-width: 968px){
+
+.text{
+
+  margin-top: 32%;
+}
+
+
+}
+
+
+
+
+
+
+@media (max-width:576px){
+
+.text{
+  margin-top: 52%;
+}
+}
+
+
+.bi-square{
+
+margin-left: 10vw;
+text-align: center;
+width: 200px;
+
+}
+
+
+.bi-square:hover{
+
+z-index: -1;
+transition: 0.7s;
+border: #112137 30px solid;
+motion-rotation: reverse;
+}
+
+
+
+
+
+.btn-wpp {
+position: fixed;
+width: 70px;
+height: 70px;
+bottom: 50px;
+right: 40px;
+background-color: #112137;
+color: #CE9184;
+border-radius: 50px;
+text-align: center;
+font-size: 43px;
+box-shadow: 3px 3px 5px #888;
+z-index: 1000px;
+}
+
+.btn-wpp:hover {
+background-color: #25d366;
+color: #fff;
+}
+
+.fa-whatsapp {
+margin-top: 16px;
+}
+div.footer-box {
+background-color: #112137;
+}
+
+div.footer-box {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+footer {
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+bottom: 0;
+left: 0;
+padding: 15px 8px;
+}
+
+div.footer-line {
+width: 580px;
+height: 1px;
+background-color: #FAD6C6;
+}
+
+#imgs-redes.img-rede {
+padding: 0px 6px;
+margin-bottom: 10px;
+}
+
+div.footer-sobre {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+div.footer-sobre p {
+color: #FAD6C6;
+font-size: 14pt;
+margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

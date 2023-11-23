@@ -1,0 +1,61 @@
+body{
+  width: 100% !important;
+  overflow-y: hidden;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  /* padding-top: 56,25% !important; */
+  /* position: relative !important; */
+}
+main > .row{
+  position: absolute;
+  height: inherit;
+  max-width: 100%;
+  width: inherit;
+
+  background-image: url('../../img/home/index/home-index.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: scroll;
+}
+.row{
+  --bs-gutter-x: 0rem !important;
+}
+
+/* dropdown - serviços */
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  background-color: #112137;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #112137;
+}
+
+  
+/* media queries */
+@media (max-width: 1024px) {
+  main > .row{
+    background-image: url('../../img/home/home-index-desktop.svg');
+  }
+}
+
+@media (max-width: 880px) {
+  main > .row{
+    background-image: url('../../img/home/home-index-tablet.svg');
+  }
+}
+
+@media (max-width: 460px) {
+  main > .row{
+    background-image: url('../../img/home/home-index-mobile.svg');
+  }
+}
+
+@media (max-width: 575.98px){
+  main{
+    margin-top: 0px;
+  }
+}

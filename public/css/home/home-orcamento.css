@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Big John';
+    src: url(../../font/Big_John_PRO/bigjohnpro-regular.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+input,
+select,
+textarea,
+button {
+  
+  background-color: #EBEFEE;
+  /* Usando 'sans-serif' como fonte de fallback caso a Big John PRO Regular não esteja disponível */
+}
+
+#contato {
+    margin-left: 400px;
+    margin-inline-start: 200px;
+}
+
+#form2 {
+    margin-top: 20%;
+    font-family: 'Big John';
+    font-size: 18px;
+    background-position: 2cm 4cm;
+    background-position: left;
+    position: relative;
+}
+
+#mensagem {
+    position: relative;
+    width: 30px;
+}
+
+#formulario {
+    position: absolute;
+    margin-left: 51%;
+    width: 37%;
+    margin-top: -27%;
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 2%;
+    font-size: 18px;
+    font-family: 'Big John';
+}
+
+
+#orcamento1 {
+    box-shadow:-7px 8px 0px rgba(17.00000088661909, 33.00000183284283, 55.00000052154064, 1);
+	background-color:rgba(203.00000309944153, 139.0000069141388, 125.00000014901161, 1);
+	height:8%;
+    width: 15%;
+	position: absolute;
+	margin-left:10%;
+    margin-top: -10%;
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Big John';
+    font-size: 30px;
+}
+
+#msg {
+    width: 100%;
+}
+
+
+#Obra {
+
+    text-align: center;
+    font-size: 15px;
+}
+
+#metro {
+
+    margin-left: 300px;
+
+}
+
+#texto{
+    font-family: 'Big John';
+    font-size: 33px;
+}
+
+
+#abas a {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -10px;
+    padding-left: 60px;
+}
+
+#abas a:hover {
+    color: #fff;
+    transition: 0.3 ease;
+    text-decoration: underline #CE9184;
+}
+
+#abas .nav-link {
+    color: #CE9184;
+}
+
+/* #pag-ativ p {
+color: #fff;
+text-decoration: underline #CE9184;
+} */
+
+#link-logo {
+    margin-right: 310px;
+}
+#bolinha{
+    margin-top: -40%;
+    margin-left: 25%;
+    
+}
+#fundo-formulario{
+    
+    margin-top: -33%;
+    margin-left: 30%;
+    
+}
+#maps{
+    margin-left: 5%;
+    margin-top: -10%;
+}
+
+
+/*  
+h1 {
+    background-color: aquamarine;
+    font-family: "Inter";
+}
+*/
+.btn-wpp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 90px;
+    background-color: #112137;
+    color: #CE9184;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 43px;
+    box-shadow: 3px 3px 5px #888;
+    z-index: 1000px;
+}
+
+.btn-wpp:hover {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+@media (max-width:1024px){
+    #fundo-formulario{
+        margin-left: 16%;
+    }
+    #formulario{
+        width: 50%;
+        margin-left: 40%;
+    }
+    #maps{
+        width:90%
+    }
+}
+
+
+@media (max-width: 768px) {
+    #bolinha{
+        margin-top: -235%;
+        z-index: 2;
+        margin-left: 25%;
+    }
+    #fundo-formulario{
+        margin-left: -15%;
+        margin-top: 20%;
+        height: 10%;
+    }
+    #maps{
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    #formulario{
+        width: 60%;
+        margin-left: 24%;
+        margin-top: 23%;
+    }
+    .btn-wpp{
+        margin-left: -20%;
+    }
+    #orcamento1{
+        margin-left: 40%;
+        width: 25%;
+    }
+    #form2{
+        margin-left: 40%;
+        width: 30%;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    #fundo-formulario{
+        margin-left: -500%;
+        margin-top: -275%;
+    }
+    #formulario{
+        margin-top: 30%;
+        position: relative;
+        margin-left:3%;
+        width: 90%;
+    }
+    .btn-wpp{
+        margin-left: 100%;
+    }
+    #orcamento1{
+        width: 40%;
+        margin-left: 30%;
+    }
+    #form2{
+        margin-left: 30%;
+        width: 30%;
+    }
+    #maps{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 375px) {
+    #fundo-formulario{
+        margin-left: -500%;
+        margin-top: -350%;
+    }
+    #formulario{
+        margin-top: 30%;
+        position: relative;
+        margin-left:5%;
+        width: 80%;
+    }
+    .btn-wpp{
+        margin-left: 100%;
+    }
+    #orcamento1{
+        width: 45%;
+        margin-left: 30%;
+    }
+    #form2{
+        margin-left: 30%;
+        width: 30%;
+    }
+}
+@media (max-width:325px){
+    #fundo-formulario{
+        margin-left: -500%;
+        margin-top:-410%;
+    }
+    #orcamento1{
+        width: 55%;
+        margin-left: 25%;
+    }
+}
+
+
