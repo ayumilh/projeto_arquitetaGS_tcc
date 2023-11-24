@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-include('../connect.php');
+include('../../../config/connect.php');
 session_start();
 
 if(isset($_POST['verificar'])){
@@ -25,11 +25,11 @@ if(isset($_POST['verificar'])){
 
     $_SESSION['id_cliente'] = $id_cliente;
     $_SESSION['pin_projeto'] = $pin_projeto;
-    header('location: ../client/cliente_home.php');
+    header('location: ../../cliente/view/cliente_home.php');
   }else{
     unset($_SESSION['id_cliente']);
     unset($_SESSION['pin_projeto']);
-    header('location: ../../html/home/home-entrar.html');
+    header('location: ../../home/view/home-entrar.html');
   }
 }
 

@@ -9,9 +9,9 @@
 
 <body>
   <?php
-  include("../connect.php");
+  include("../../../config/connect.php");
     $pin_projeto     = $_POST['pin_projeto'];
-    $uploadDir       = '../../download/arquivos/';
+    $uploadDir       = '../../../src/download/arquivo/';
     $nome_arquivo    = $_POST['nome_arquivo'];
     $caminho         = $_FILES['caminho_arquivo']['name'];
     $caminho_arquivo = $uploadDir . basename($caminho);
@@ -29,7 +29,6 @@
         $query_arquivos  = $sql->query($select_arquivos);
 
         if($query_arquivos->num_rows > 0){
-          $_SESSION['cod_arquivo']     = $cod_arquivo;
           $_SESSION['pin_projeto']     = $pin_projeto;
           $_SESSION['nome_arquivo']    = $nome_arquivo;
           $_SESSION['caminho_arquivo'] = $caminho_arquivo;

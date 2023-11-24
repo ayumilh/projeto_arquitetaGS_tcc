@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../css/admin/cadastrar-cliente.css"> 
+  <link rel="stylesheet" href="../../../public/css/admin/cadastrar-cliente.css"> 
   
 </head>
 
@@ -21,7 +21,7 @@
   <div class="container">
     <main class="row g-5">
       <h4>Criar projeto</h4>
-      <form action="../../php/admin/criar_projeto.php" method="post" enctype="multipart/form-data" class="col">
+      <form action="../model/criar_projeto.php" method="post" enctype="multipart/form-data" class="col">
         <div class="row g-3">
           <div class="form-floating col-sm-6">
             <input type="date" class="form-control" name="previsao_entrega" placeholder="previsao de entrega" value="00-00-000">
@@ -32,7 +32,7 @@
             <label for="id_cliente">id do cliente</label>
           </div>
           <div class="form-floating">
-            <input type="file" class="form-control" name="projeto_planta" placeholder="planta">
+            <input type="file" class="form-control" name="anexo" placeholder="planta">
             <label for="projeto_planta">Planta do projeto</label>
           </div>
           <div class="form-floating">

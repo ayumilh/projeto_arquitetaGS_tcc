@@ -7,12 +7,12 @@
 </head>
 <body>
 <?php
-  include('../connect.php');
+  include('../../../config/connect.php');
   session_start();
   $pin_projeto = $_POST['pin_projeto'];
   $nome      = $_POST['nome_empresa'];
   $servico   = $_POST['selecao_servico'];
-  $uploadDir = '../../download/orcamentos/';
+  $uploadDir = '../../../src/download/orcamento/';
   $caminho   = $_FILES['anexo']['name'];
   $anexo     = $uploadDir . basename($caminho);
   $status = 'Selecionar';

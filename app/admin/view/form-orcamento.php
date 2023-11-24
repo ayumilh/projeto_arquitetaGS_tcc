@@ -17,7 +17,7 @@
   <div class="container">
     <main class="row g-5">
       <h4>Lançar orçamentos</h4>
-      <form enctype="multipart/form-data" action="./lancar-orcamento.php" method="post" class="col">
+      <form enctype="multipart/form-data" action="../model/lancar-orcamento.php" method="post" class="col">
         <div class="row g-3">
           <div class="form-floating col-lg-6">
             <input type="text" class="form-control" name="pin_projeto" placeholder="Pin do projeto">
@@ -28,7 +28,7 @@
             <select class="form-select" name="selecao_servico">
               <option selected></option>
               <?php
-                include('../connect.php');
+                include('../../../config/connect.php');
                 $query = "SELECT * FROM servicos";
                 $result = $sql->query($query);
 

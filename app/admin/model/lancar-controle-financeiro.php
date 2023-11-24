@@ -9,15 +9,14 @@
 
 <body>
   <?php
-  include("../connect.php");
+  include("../../../config/connect.php");
   session_start();
-    $pin_projeto = $_POST['pin_projeto'];
-    $uploadDir   = '../../download/arquivos/';
+    $pin_projeto;
+    $uploadDir   = '../../../src/download/financeiro/';
     $caminho     = $_FILES['anexo_servico']['name'];
     $anexo       = $uploadDir . basename($caminho);
     $servico     = $_POST['selecao_servico'];
-    $status      = $_POST['listGroupCheckableRadios'];
-    $status      = $_POST['listGroupCheckableRadios'];
+    $status      = $_POST['status'];
     $valor       = $_POST['valor_servico'];
     $data        = $_POST['data_servico'];
     

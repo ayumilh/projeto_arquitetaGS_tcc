@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['pin_projeto']) == true){
-  header('location: ../../html/home/home-entrar.html');
+  header('location: ../../home/view/home-entrar.html');
 }else{$pin_projeto = $_SESSION['pin_projeto'];}
 ?>
 <!doctype html>
@@ -18,14 +18,14 @@ if(!isset($_SESSION['pin_projeto']) == true){
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   
-  <link rel="stylesheet" href="../../css/client/cliente-orcamento.css">
+  <link rel="stylesheet" href="../../../../public/css/client/cliente-orcamento.css">
 </head>
 
 <body>
   <div class="container container-sm">
     <header class="mb-lg-5 text-center">
       <nav class="navbar">
-        <a href="../../php/client/cliente_home.php"><img src="../../img/voltar.png" class="btn-voltar"></a>
+        <a href="../cliente_home.php"><img src="../../../../public/img/home/voltar.png" class="btn-voltar"></a>
         <div class="title">
           <h1>Orçamentos</h1>
         </div>
@@ -41,7 +41,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
               <h3>Marmoraria</h3>
 
               <?php
-                include('../../php/connect.php');
+                include('../../../../config/connect.php');
                 $select_table = "SELECT * FROM orcamentos WHERE pin_projeto = '$pin_projeto' AND id_servico = 6";
                 $query_row = $sql->query($select_table);
 
@@ -54,7 +54,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                     $anexo = $row['anexo'];
                     echo '
                       <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                        <img src="../../img/client/orcamento.png" alt="twbs" class="flex-shrink-0 mt-2 img-orcamento">
+                        <img src="../../../../public/img/client/orcamento.png" alt="twbs" class="flex-shrink-0 mt-2 img-orcamento">
                         <div class="d-flex w-100 justify-content-between">
                           <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,7 +76,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                   $anexo        = '';
                   // echo '
                   //   <div class="list-group-item list-group-item-action d-flex gap-3 py-3 mt-2" aria-current="true">
-                  //     <img src="../../img/client/orcamento.png" alt="twbs" class="flex-shrink-0 mt-2 img-orcamento">
+                  //     <img src="../../../../public/img/client/orcamento.png" alt="twbs" class="flex-shrink-0 mt-2 img-orcamento">
                   //     <div class="d-flex w-100 justify-content-between">
                   //       <div class="dropdown">
                   //         <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">

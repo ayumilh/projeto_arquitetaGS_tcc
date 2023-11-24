@@ -117,6 +117,3 @@ INSERT INTO cliente VALUES(DEFAULT, 'lara Ayumi', "58962188856", "123456789101",
 SELECT * FROM projeto WHERE pin = '11111';
 
 -- insert 
-
-
-INSERT INTO projeto VALUES(11111, 2, 'Lara Ayumi', '20230529');

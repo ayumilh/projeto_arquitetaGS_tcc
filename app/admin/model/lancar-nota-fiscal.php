@@ -9,9 +9,9 @@
 
 <body>
   <?php
-  include("../connect.php");
+  include("../../../config/connect.php");
     $pin_projeto      = $_POST['pin_projeto'];
-    $uploadDir       = '../../download/pdf/';
+    $uploadDir       = '../../../src/download/pdf';
     $nome_arquivo    = $_POST['nome_arquivo'];
     $caminho         = $_FILES['caminho_arquivo']['name'];
     $caminho_arquivo = $uploadDir . basename($caminho);
@@ -30,7 +30,6 @@
 
         if($query_notaFiscal->num_rows > 0){
           $_SESSION['pin_projeto']     = $pin_projeto;
-          $_SESSION['cod_notaFiscal']  = $cod_notaFiscal;
           $_SESSION['nome_arquivo']    = $nome_arquivo;
           $_SESSION['caminho_arquivo'] = $caminho_arquivo;
           $_SESSION['observacao']      = $obs_arquivo;

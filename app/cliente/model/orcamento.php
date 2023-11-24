@@ -15,7 +15,7 @@
 
 <body>
 <?php
-include('../connect.php');
+include('../../../config/connect.php');
 
 $nome       = $_POST['nome_orc'];
 $email      = $_POST['email_orc'];

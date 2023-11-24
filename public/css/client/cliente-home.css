@@ -127,13 +127,14 @@ header span{
 button.btn-historico{
     background-color: #008605;
 }
-.list-group--financeiro {
-    width: 400px;
-    max-width: 460px;
+#receitaDespesa {
+    width: 200px;
+    max-width: 200px;
     margin: 4rem auto;
 }
-.list-group--financeiro  .list-group-item {
-cursor: pointer;
+#receitaDespesa  .list-group-item {
+    text-align: center;
+    cursor: pointer;
 }
 .list-historico{
     display: none;
@@ -145,7 +146,6 @@ cursor: pointer;
 }
 
 .info{
-    
     background-color: var(--bg-itens);
     border-radius: 20px;
     filter: drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.25));
@@ -153,16 +153,14 @@ cursor: pointer;
     font-weight: 600;
     cursor: pointer;
 } 
-/* .receita input,
-.despesa input{
-    appearance: none;
-} */
+
 .receita,
 .despesa{
     cursor: pointer;
     background-color: var(--bg-itens);
     border: transparent;
     font-size: 1rem;
+    border-radius: 50%;
 }
 .receita{
     color: #008605 !important;
@@ -222,15 +220,15 @@ cursor: pointer;
     .avisoCampoVazio h1.modal-title, .avisoCampoVazio div.modal-body{
         font-size: 1.2rem;
     }
-
-    .receitaDespesa{
+    
+    #receitaDespesa {
         margin-left: 0px;
-    }
-
-    .list-group--financeiro {
         width: 350px;
         max-width: 460px;
         margin: 4rem auto;
+    }
+    #receitaDespesa {
+        border-radius: 50px;
     }
     .list-budgets .row{
         margin-left: 0px;
