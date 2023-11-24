@@ -260,6 +260,9 @@ if(!isset($_SESSION['pin_projeto']) == true){
                       </div>
 
                       <div class="modal-body mt-3">
+                        <div class="row align-items-start">
+                          <button type="button" class="btn w-auto mb-1" id="hidden-historico">Historico</button>
+                        </div>
                         <form id="formControleFinanceiro" action="../../admin/model/lancar-controle-financeiro.php" enctype="multipart/form-data" method="post">
                           <div class="row g-3 d-flex justify-content-center">
                             <input type="hidden" name="pin_projeto_cli" value="<?=$pin_projeto?>">
@@ -477,7 +480,8 @@ if(!isset($_SESSION['pin_projeto']) == true){
       </div>
     </div>
   </div>
-
+        
+  <script src="../../../public/js/controle-financeiro.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
