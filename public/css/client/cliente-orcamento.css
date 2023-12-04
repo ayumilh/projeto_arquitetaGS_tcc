@@ -68,13 +68,13 @@ img.img-orcamento{
 .indeterminado{
   background-color: rgb(240, 240, 240);
 }
-.selecionado, .selecionado:active, .selecionado:hover{
+.selecionado{
   background-color: rgb(25, 135, 84);
   color: var(--bg-primary);
 }
 .desabilitado{
   background-color: rgb(220, 53, 69);
-  filter: blur(2px);
+  filter: blur(1.6px);
   color: var(--bg-primary);
 }
 

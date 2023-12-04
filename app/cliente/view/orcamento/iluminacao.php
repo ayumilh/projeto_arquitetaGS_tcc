@@ -12,7 +12,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="../../img/home/logotipo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../../../../public/img/home/logotipo.png" type="image/x-icon">
   
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -64,7 +64,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                               <li><a href="' .$row['anexo']. '">Visualizar</a></li>
                             </ul>
                           </div>
-                          <button type="button" class="btn-selecao indeterminado" id="btnOrcamento3">Selecionar</button>
+                          <button type="button" class="btn-selecao indeterminado">Selecionar</button>
                         </div>
                       </div>';
                   }
@@ -84,7 +84,7 @@ if(!isset($_SESSION['pin_projeto']) == true){
                   //           <li><a href="#">Visualizar</a></li>
                   //         </ul>
                   //       </div>
-                  //       <button type="button" class="btn-selecao indeterminado" id="btnOrcamento3">Selecionar</button>
+                  //       <button type="button" class="btn-selecao indeterminado">Selecionar</button>
                   //     </div>
                   //   </div>';
                 }
@@ -105,7 +105,45 @@ if(!isset($_SESSION['pin_projeto']) == true){
     </main>
   </div>
 
-  <script src="../../js/orcamento.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var listaButton = document.querySelectorAll('.btn-selecao');
+      var listaDeDiv = document.getElementsByClassName('item-lista')
+
+      listaButton.forEach(function(div) {
+        div.addEventListener('click', function(event) {
+          // Verifica se já foi selecionado nesta sessão
+          var foiSelecionado = <?php echo isset($_SESSION['selecionado']) ? 'true' : 'false'; ?>;
+
+          // if (!foiSelecionado) {
+            // Adiciona um evento de clique a cada div da lista
+            listaButton.forEach(function(div) {
+              div.addEventListener('click', function(event) {
+                // Remove a classe 'selecionado' de todas as divs
+                listaButton.forEach(function(div) {
+                  div.classList.remove('indeterminado');
+                  div.classList.add('desabilitado');
+                  div.innerHTML = 'Selecionado';
+                });
+                
+                // Adiciona a classe 'selecionado' à div clicada
+                event.currentTarget.classList.remove('indeterminado');
+                event.currentTarget.classList.add('selecionado');
+                div.innerHTML = 'Selecionado';
+
+              });
+            });
+
+            // Marca como selecionado na sessão
+            <?php $_SESSION['selecionado'] = true; ?>;
+          // } else {
+            // alert('Você já fez uma escolha nesta sessão.');
+          // }
+        });
+      });
+    });
+  </script>
+
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
